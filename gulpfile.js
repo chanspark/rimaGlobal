@@ -13,8 +13,11 @@ var paths = {
     sass: src + '/sass/**/*.scss',
     css: dist + '/css/*.css'
 };
+var autoprefixerOptions = {
+    browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+};
 
-gulp.task('js:combine', function () {
+gulp.task('js:combine', function() {
     gulp.src(paths.js)
         .pipe(concat('main.js'))
         .pipe(gulp.dest(dist + '/js'))
@@ -31,16 +34,17 @@ var sassOptions = {
     sourceComments: true,
 };
 
-gulp.task('sass:compile', function () {
+gulp.task('sass:compile', function() {
     gulp.src(paths.sass)
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
+        .pipe(rename('main.css'))
         .pipe(gulp.dest(dist + '/css'))
 })
 
-gulp.task('watch', function () {
+gulp.task('watch', function() {
     gulp.watch(paths.js, ['js:combine']);
     gulp.watch(paths.sass, ['sass:compile']);
 })

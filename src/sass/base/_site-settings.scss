@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+// 컴파스 reset
+// @import "compass/reset";
+// @import "compass/css3";
+// 기본 색상 변수 설정
+$color-primary: #ff7d5f; //pink orange
+$color-primary-lighten: lighten($color-primary, 5%); //pink orange
+$color-primary-darken: darken($color-primary, 5%); //pink orange
+$color-text: #444444; //black
+$color-subtext: #888888; //dark grey
+$color-lighttext: #bdbdbd; //dark grey
+$color-border: #dfdfdf; //grey
+$color-bg: #fafafa; //very light grey
+$color-tag1: #4c91e2; //
+$color-tag2: #00c8d3; //
+$color-tag3: #ffc387; //
+$color-tag4: #ff78a5; //
+$color-tag5: #93d847; //
+$color-tag6: #ff7d5f; //
+$color-tag7: #f35e73; //
+$color-tag8: #998fdd; //
+// $color-secondary: #ff4b69; //red
+$color-success: #16b972; //green
+$color-error: #ff4b69; //red
+$color-naver: #1ec800; //naver
+$color-facebook: #3b5a9a; //facebook
+// $color-darken: #163584; //dark blue
+// $color-finance: #30997a; //teal green
+// $color-invest: #b03532; //deep red
+// $color-reward: #4464a1; //faded blue
+// $color-ranking: #d7a00b; //sand orange
+// $color-guide: #854892; //deep purple
+// 타이포그래피 설정
+$font-alllang: 'Noto Sans KR',
+'맑은 고딕',
+'Malgun Gothic',
+'Apple SD Gothic Neo',
+'돋움',
+dotum,
+sans-serif;
+// 폰트 굵기 설정
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 600;
+// 폰트 크기 설정
+$font-xsmall: 11px;
+$font-ssmall: 12px;
+$font-small: 13px;
+$font-normal: 14px;
+$font-mobile: 16px;
+$font-medium: 18px;
+$font-big: 22px;
+$font-xbig: 32px;
+$font-xxbig: 36px;
+// 반응형 breakpoints 설정
+$breakpoint-470: 470px;
+$breakpoint-600: 600px;
+$breakpoint-920: 920px;
+$breakpoint-1240: 1240px;
+$breakpoint-1440: 1440px;
+@mixin responsive($media) {
+    @if $media==phoneScreens {
+        @media only screen and (max-width: $breakpoint-470) {
+            @content;
+        }
+    }
+    @else if $media==tabletScreens {
+        @media only screen and (min-width: $breakpoint-470 + 1) and (max-width: $breakpoint-600 + 32) {
+            @content;
+        }
+    }
+    @else if $media==touchScreens {
+        @media only screen and (max-width: $breakpoint-920) {
+            @content;
+        }
+    }
+    @else if $media==mediumScreens {
+        @media only screen and (max-width: $breakpoint-1240 - 1) {
+            @content;
+        }
+    }
+    @else if $media==wideScreens {
+        @media only screen and (min-width: $breakpoint-1240) {
+            @content;
+        }
+    }
+    @else if $media==bigScreens {
+        @media only screen and (min-width: $breakpoint-1440) {
+            @content;
+        }
+    }
+    @else if $media==pcScreens {
+        @media only screen and (min-width: $breakpoint-920 + 1) {
+            @content;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $color-border;
+    font-weight: $font-medium;
+    font-size: $font-regular;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: $color-border;
+    font-weight: $font-medium;
+    font-size: $font-regular;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color-border;
+    font-weight: $font-medium;
+    font-size: $font-regular;
+}
+
+input:-ms-input-placeholder {
+    color: $color-border;
+    font-weight: $font-medium;
+    font-size: $font-regular;
+}
+
+:-ms-input-placeholder {
+    color: $color-border;
+    font-weight: $font-medium;
+    font-size: $font-regular;
+}
+
+// body 태그에 SASS연동 기본 폰트, bg, color 등의 효과를 줌.
+body {
+    background: $color-bg;
+    color: $color-text;
+    font-size: $font-small;
+    font-family: $font-alllang;
+    font-weight: $font-regular;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    // @include border-radius(5px, 5px);
+    // @include box-sizing(border-box);
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    // font: $font-normal 14px/14px 'Spoqa Han Sans', sans-serif;
+    padding: 0;
+    a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        // color: white;
+    }
+}
+
+a {
+    color: $color-text;
+    text-decoration: none;
+    &:visited {
+        text-decoration: none;
+    }
+}
+
+// 각종 form 요소들에 focus 가 들어갈경우 생기는 '파란 아웃라인'을 초기화 시킵니다.
+// 웹 접근성에 맞지 않는 스타일입니다. 웹 접근성을 준수하는 경우 '주석' 처리 시켜주세요.
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+// textare의 기본 스타일과 사이즈 조절을 없애줍니다.
+textarea {
+    resize: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+// input[type="text"],
+// input[type="password"],
+// input[type="email"],
+// input[type="checkbox"],
+// input[type="radio"],
+// input[type="submit"]
+input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    // border-radius: 0;
+    // border: 0;
+    // margin: 0;
+}
+
+input[type="search"] {
+    border: 0
+}
+
+// input[type="submit"] {
+//     -webkit-appearance: none;
+//     appearance: none;
+// }
+input[type="checkbox"],
+input[type="radio"] {
+    display: none;
+    // width: 0;
+    // height: 0;
+    // margin: 0;
+    // padding: 0;
+    // line-height: 0;
+    // font-size: 0;
+    // border: none;
+    // mozilla firefox용 체크박스 및 라디오 버튼 대응책 display:none 을 사용하지 않기 위한 발악. 은 무슨 그냥 display none 써라 그게 정신건강에 좋음. 모질라 브라우저 및 사파리에서는 어떻게 하든 문제가 남.
+    // border-width: 0;
+    // border-image-width: 0;
+    // border-image-source: none;
+    &:focus+label {
+        border: 1px solid $color-primary;
+    }
+}
+
+select {
+    border-color: $color-subtext;
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+    color: $color-text;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

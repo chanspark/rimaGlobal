@@ -1,0 +1,767 @@
+@charset "UTF-8";
+/*
+*_layout.scss
+*사이트 전체 레이아웃 
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* line 9, src/sass/base/_reset.scss */
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/* line 17, src/sass/base/_reset.scss */
+html {
+	/* 1 */
+	line-height: 1.15;
+	/* 2 */
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* line 27, src/sass/base/_reset.scss */
+body {
+	margin: 0;
+}
+
+/* line 32, src/sass/base/_reset.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+/* line 42, src/sass/base/_reset.scss */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 63, src/sass/base/_reset.scss */
+html {
+	font-family: sans-serif;
+	/* 1 */
+	line-height: 1.15;
+	/* 2 */
+	-ms-text-size-adjust: 100%;
+	/* 3 */
+	-webkit-text-size-adjust: 100%;
+	/* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 83, src/sass/base/_reset.scss */
+body {
+	margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 92, src/sass/base/_reset.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 107, src/sass/base/_reset.scss */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 122, src/sass/base/_reset.scss */
+figcaption,
+figure,
+main {
+	/* 1 */
+	display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 134, src/sass/base/_reset.scss */
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 144, src/sass/base/_reset.scss */
+hr {
+	box-sizing: content-box;
+	/* 1 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 159, src/sass/base/_reset.scss */
+pre {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 176, src/sass/base/_reset.scss */
+a {
+	background-color: transparent;
+	/* 1 */
+	-webkit-text-decoration-skip: objects;
+	/* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 189, src/sass/base/_reset.scss */
+a:active,
+a:hover {
+	outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 200, src/sass/base/_reset.scss */
+abbr[title] {
+	border-bottom: none;
+	/* 1 */
+	text-decoration: underline;
+	/* 2 */
+	text-decoration: underline dotted;
+	/* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 214, src/sass/base/_reset.scss */
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 224, src/sass/base/_reset.scss */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 235, src/sass/base/_reset.scss */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 249, src/sass/base/_reset.scss */
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 258, src/sass/base/_reset.scss */
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 268, src/sass/base/_reset.scss */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 278, src/sass/base/_reset.scss */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+/* line 286, src/sass/base/_reset.scss */
+sub {
+	bottom: -0.25em;
+}
+
+/* line 290, src/sass/base/_reset.scss */
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 303, src/sass/base/_reset.scss */
+audio,
+video {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 313, src/sass/base/_reset.scss */
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 323, src/sass/base/_reset.scss */
+img {
+	border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 332, src/sass/base/_reset.scss */
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 346, src/sass/base/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 367, src/sass/base/_reset.scss */
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 379, src/sass/base/_reset.scss */
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 392, src/sass/base/_reset.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+	/* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 408, src/sass/base/_reset.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 421, src/sass/base/_reset.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 433, src/sass/base/_reset.scss */
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 447, src/sass/base/_reset.scss */
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 468, src/sass/base/_reset.scss */
+progress {
+	display: inline-block;
+	/* 1 */
+	vertical-align: baseline;
+	/* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 480, src/sass/base/_reset.scss */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 490, src/sass/base/_reset.scss */
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 503, src/sass/base/_reset.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 514, src/sass/base/_reset.scss */
+[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 526, src/sass/base/_reset.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 537, src/sass/base/_reset.scss */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 554, src/sass/base/_reset.scss */
+details,
+menu {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 567, src/sass/base/_reset.scss */
+summary {
+	display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 580, src/sass/base/_reset.scss */
+canvas {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 589, src/sass/base/_reset.scss */
+template {
+	display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 602, src/sass/base/_reset.scss */
+[hidden] {
+	display: none;
+}
+
+/* line 100, src/sass/base/_site-settings.scss */
+::-webkit-input-placeholder {
+	color: #dfdfdf;
+	font-weight: 18px;
+	font-size: 400;
+}
+
+/* line 106, src/sass/base/_site-settings.scss */
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: #dfdfdf;
+	font-weight: 18px;
+	font-size: 400;
+}
+
+/* line 113, src/sass/base/_site-settings.scss */
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #dfdfdf;
+	font-weight: 18px;
+	font-size: 400;
+}
+
+/* line 120, src/sass/base/_site-settings.scss */
+input:-ms-input-placeholder {
+	color: #dfdfdf;
+	font-weight: 18px;
+	font-size: 400;
+}
+
+/* line 126, src/sass/base/_site-settings.scss */
+:-ms-input-placeholder {
+	color: #dfdfdf;
+	font-weight: 18px;
+	font-size: 400;
+}
+
+/* line 133, src/sass/base/_site-settings.scss */
+body {
+	background: #fafafa;
+	color: #444444;
+	font-size: 13px;
+	font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
+	font-weight: 400;
+}
+
+/* line 141, src/sass/base/_site-settings.scss */
+button {
+	background: transparent;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding: 0;
+}
+
+/* line 152, src/sass/base/_site-settings.scss */
+button a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/* line 160, src/sass/base/_site-settings.scss */
+a {
+	color: #444444;
+	text-decoration: none;
+}
+
+/* line 163, src/sass/base/_site-settings.scss */
+a:visited {
+	text-decoration: none;
+}
+
+/* line 170, src/sass/base/_site-settings.scss */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+/* line 178, src/sass/base/_site-settings.scss */
+textarea {
+	resize: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* line 191, src/sass/base/_site-settings.scss */
+input {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* line 200, src/sass/base/_site-settings.scss */
+input[type="search"] {
+	border: 0;
+}
+
+/* line 208, src/sass/base/_site-settings.scss */
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+}
+
+/* line 222, src/sass/base/_site-settings.scss */
+input[type="checkbox"]:focus + label,
+input[type="radio"]:focus + label {
+	border: 1px solid #ff7d5f;
+}
+
+/* line 227, src/sass/base/_site-settings.scss */
+select {
+	border-color: #888888;
+	width: 90px;
+	height: 30px;
+	font-size: 16px;
+	color: #444444;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* line 238, src/sass/base/_site-settings.scss */
+select::-ms-expand {
+	display: none;
+}
+
+/* line 242, src/sass/base/_site-settings.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* line 248, src/sass/base/_site-settings.scss */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+/* Style for our header texts
+	* --------------------------------------- */
+/* line 6, src/sass/base/_fullpage.scss */
+h1 {
+	font-size: 5em;
+	font-family: arial, helvetica;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+/* Centered texts in each section
+	* --------------------------------------- */
+/* line 18, src/sass/base/_fullpage.scss */
+.section {
+	text-align: center;
+}
+
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+/* line 26, src/sass/base/_fullpage.scss */
+.section {
+	background-size: cover;
+}
+
+/* line 30, src/sass/base/_fullpage.scss */
+.slide {
+	background-size: cover;
+}
+
+/* Defining each section background and styles
+	* --------------------------------------- */
+/* line 38, src/sass/base/_fullpage.scss */
+#section0 {
+	background-image: url(../image/bg6.jpg);
+}
+
+/* line 42, src/sass/base/_fullpage.scss */
+#section0 h1 {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	position: relative;
+}
+
+/* line 48, src/sass/base/_fullpage.scss */
+#section2 {
+	background-image: url(../image/bg3.jpg);
+	padding: 6% 0 0 0;
+}
+
+/* line 53, src/sass/base/_fullpage.scss */
+#section3 {
+	background-image: url(../image/bg4.jpg);
+	padding: 6% 0 0 0;
+}
+
+/* line 58, src/sass/base/_fullpage.scss */
+#section3 h1 {
+	color: #000;
+}
+
+/*Adding background for the slides
+	* --------------------------------------- */
+/* line 66, src/sass/base/_fullpage.scss */
+#slide1 {
+	background-image: url(../image/bg2.jpg);
+	padding: 6% 0 0 0;
+}
+
+/* line 71, src/sass/base/_fullpage.scss */
+#slide2 {
+	background-image: url(../image/bg5.jpg);
+	padding: 6% 0 0 0;
+}
+
+/* Bottom menu
+	* --------------------------------------- */
+/* line 80, src/sass/base/_fullpage.scss */
+#infoMenu li a {
+	color: #fff;
+}
+
+/* line 1, src/sass/modules/_header.scss */
+.header {
+	background: -webkit-linear-gradient(#e98a00, #f5aa2f);
+	background: linear-gradient(#e98a00, #f5aa2f);
+}
