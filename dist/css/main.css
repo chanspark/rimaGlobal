@@ -734,48 +734,50 @@ h1 {
 
 /* line 51, src/sass/base/_fullpage.scss */
 #section1 .img--1 {
-	position: absolute;
-	top: 160px;
-	left: 10px;
-	width: 800px;
+	height: 300px;
 }
 
-/* line 57, src/sass/base/_fullpage.scss */
+/* line 58, src/sass/base/_fullpage.scss */
+#section1 .img--2 {
+	height: 150px;
+}
+
+/* line 61, src/sass/base/_fullpage.scss */
 #section1 .img--3 {
 	width: 500px;
 	margin: 30px auto;
 }
 
-/* line 66, src/sass/base/_fullpage.scss */
+/* line 70, src/sass/base/_fullpage.scss */
 #section3 {
 	background-image: url(../image/bgpic3.jpg);
 }
 
 /*Adding background for the slides
 	* --------------------------------------- */
-/* line 74, src/sass/base/_fullpage.scss */
+/* line 78, src/sass/base/_fullpage.scss */
 #sec1__slide1 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 78, src/sass/base/_fullpage.scss */
+/* line 82, src/sass/base/_fullpage.scss */
 #sec1__slide2 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 82, src/sass/base/_fullpage.scss */
+/* line 86, src/sass/base/_fullpage.scss */
 #sec2__slide1 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
-/* line 87, src/sass/base/_fullpage.scss */
+/* line 91, src/sass/base/_fullpage.scss */
 #sec2__slide2 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
 /* Bottom menu
 	* --------------------------------------- */
-/* line 96, src/sass/base/_fullpage.scss */
+/* line 100, src/sass/base/_fullpage.scss */
 #infoMenu li a {
 	color: #fff;
 }
@@ -791,12 +793,35 @@ h1 {
 	width: 1200px;
 }
 
-/* line 12, src/sass/layout/_grids.scss */
-.g--section {
-	width: 1400px;
+@media only screen and (max-width: 1239px) {
+	/* line 7, src/sass/layout/_grids.scss */
+	.g--full {
+		width: 900px;
+	}
 }
 
-/* line 17, src/sass/layout/_grids.scss */
+@media only screen and (max-width: 920px) {
+	/* line 7, src/sass/layout/_grids.scss */
+	.g--full {
+		width: 95%;
+		margin: 0 2.5%;
+	}
+}
+
+/* line 19, src/sass/layout/_grids.scss */
+.g--section {
+	width: 70%;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 920px) {
+	/* line 19, src/sass/layout/_grids.scss */
+	.g--section {
+		width: 90%;
+	}
+}
+
+/* line 29, src/sass/layout/_grids.scss */
 .wrap {
 	height: 80%;
 	-webkit-transform: translate(0px, 100px);
@@ -807,26 +832,25 @@ h1 {
 	padding-top: 50px;
 }
 
-/* line 26, src/sass/layout/_grids.scss */
+/* line 38, src/sass/layout/_grids.scss */
 .wrap__text {
-	width: 350px;
-	margin-left: 60%;
-	margin-top: 80px;
+	width: 50%;
+	margin: 0 auto;
 }
 
-/* line 32, src/sass/layout/_grids.scss */
+/* line 45, src/sass/layout/_grids.scss */
 .wrap__center {
 	width: 600px;
 	margin: 30px auto;
 }
 
-/* line 39, src/sass/layout/_grids.scss */
+/* line 52, src/sass/layout/_grids.scss */
 .wrap__dl dt {
 	width: 100px;
 	display: inline-block;
 }
 
-/* line 45, src/sass/layout/_grids.scss */
+/* line 58, src/sass/layout/_grids.scss */
 .wrap__dl dd {
 	display: inline-block;
 	width: 450px;
@@ -844,7 +868,6 @@ h1 {
 .font__text {
 	font-size: 14px;
 	color: #888888;
-	text-align: left;
 }
 
 /* line 15, src/sass/modules/_style.scss */

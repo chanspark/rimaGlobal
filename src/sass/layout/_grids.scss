@@ -7,11 +7,23 @@
 .g--full {
     @extend .g;
     width: 1200px;
+    @include responsive(mediumScreens) {
+        width: 900px;
+    }
+    @include responsive(touchScreens) {
+        width: 95%;
+        margin: 0 2.5%;
+    }
 }
 
 .g--section {
     @extend .g;
-    width: 1400px;
+    width: 70%;
+    // @include responsive()
+    overflow: hidden;
+    @include responsive(touchScreens) {
+        width: 90%;
+    }
 }
 
 .wrap {
@@ -24,9 +36,10 @@
 }
 
 .wrap__text {
-    width: 350px;
-    margin-left: 60%;
-    margin-top: 80px;
+    width: 50%;
+    margin: 0 auto;
+    // margin-left: 60%;
+    // margin-top: 80px;
 }
 
 .wrap__center {
