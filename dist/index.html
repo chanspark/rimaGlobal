@@ -21,54 +21,198 @@
     <script type="text/javascript" src="plugin/jquery.fullPage.min.js"></script>
     <!--fullpage.js 선언문-->
     <script type="text/javascript">
+        var slideIndex = 1,
+            sliding = false;
         $(document).ready(function() {
             $('#fullpage').fullpage({
+                anchors: ['home', 'rima', 'product', 'inquiry'],
+                menu: '#myMenu',
                 verticalCentered: false,
+                navigation: true,
+                navigationTooltips: ['홈', '리마 글로벌', '제품', '연락처'],
+                // showActiveTooltip: true,
+                slidesNavigation: true,
                 // navigation: true,
+                css3: true,
+
+
             });
         });
     </script>
 </head>
 
 <body>
+    <div class="header">
+        <div class="g--full">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="image/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header__menu">
+                <ul id="myMenu">
+                    <li class="header__menu-list" data-menuanchor="home"><a href="#home">HOME</a></li>
+                    <li class="header__menu-list" data-menuanchor="rima"><a href="#rima">RIMA GLOBAL</a></li>
+                    <li class="header__menu-list" data-menuanchor="product"><a href="#product">PRODUCT</a></li>
+                    <li class="header__menu-list" data-menuanchor="inquiry"><a href="#inquiry">INQUIRY</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div id="fullpage">
-        <div class="section" id="section0">
-            <!--<h1>fullPage.js</h1>-->
-            <div class="header">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="image/logo.png" alt="">
-                    </a>
+        <div class="section" id="section0" data-anchor="home">
+            <div class="g--section wrap">
+                <h1 class="font__header">리마 글로벌에 오신걸 환영합니다.</h1>
+                <p class="font__header">임팩트 있는 슬로건, 이미지등을 넣을 수 있습니다.</p>
+                <img src="image/banner.jpg" alt="" class="img--1">
+                <div class=""></div>
+            </div>
+        </div>
+        <div class="section" id="section1" data-anchor="rima">
+            <div class="slide" id="sec1__slide1">
+                <div class="g--section wrap">
+                    <h1 class="font__header">CEO 인사말</h1>
+                    <img src="image/banner.jpg" alt="" class="img--1">
+                    <div class="font__text wrap__text">
+                        <p>RIMA GLOBAL Introduce To The World Fresh & Positive Food Culture With “SINCERITY” and “SPIRIT”
+                        </p>
+                        <p>RIMA GLOBAL is dedicated to providing our consumers with the best possible products. </p>
+                        <p>Especially, RIMA GLOBAL focus on speared excellent Korean produces & grocery items all over the world. </p>
+                        <p>And by following this model of innovation and excellence, RIMA GLOBAL currently stands as a leading food company. </p>
+                        <p>RIMA GLOBAL is dedicated to working toward the healthy development of the communities in which our foods are sold. </p>
+                        <p>Our priority is always will be our customers and quality. Our goal is to bring a smile to the faces of all the people who enjoy our products. </p>
+                        <p>We will listen to your voice and do our best. </p>
+                        <p>Thank you for visitation E-RIMA GLOBAL. Sincerely.</p>
+                    </div>
                 </div>
-                <div class="header__menu">
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">RIMA GLOBAL</a></li>
-                        <li><a href="">PRODUCT</a></li>
-                        <li><a href="">INQUIRY</a></li>
-                    </ul>
+            </div>
+            <div class="slide" id="sec1__slide2">
+                <div class="g--section wrap">
+                    <h1 class="font__header">경영이념</h1>
+                    <img src="image/figure1.jpg" alt="" class="img--1">
+                    <div class="font__text wrap__text">
+                        <p>
+                            RIMA has focused on the top end fruit and vegetables quality markets. We are committed to supplying the best quality products to the world. The company deals with a limited number of carefully selected growers who share our approach to quality.
+                        </p>
+                        <p>
+                            RIMA provides full back up and support on all aspects of exporting perishable produce such as packaging, logistics, shipping, marketing and administration. We guide producer with regard to packing to the correct specifications for each market requirement
+                            and our strict quality control elimnates the risk of shipping unsuitable product.
+                        </p>
+                    </div>
                 </div>
             </div>
+            <div class="slide" id="sec1__slide2">
+                <div class="g--section wrap">
+                    <h1 class="font__header">HISTORY</h1>
+                    <div class="font__text wrap__center">
+                        <dl class="wrap__dl">
+                            <dt>Jul, 2004</dt>
+                            <dd>Establish RIMA GLOBAL CO., LTD</dd>
+                            <dt>Nov. 2006</dt>
+                            <dd>Presidential Award for Million Dollar Export</dd>
+                            <dt>Nov, 2007</dt>
+                            <dd>Excellence Award of the Minister of Agriculture</dd>
+                            <dt>Aug, 2009</dt>
+                            <dd>Everhills Co., Ltd, establish in Youngkwang Gun, Jeonnam, Korea</dd>
+                            <dt>Jun, 2010</dt>
+                            <dd>Everhills Foods Inc., establish in LA, USA</dd>
+                            <dt>Nov, 2010</dt>
+                            <dd>Presidential Award for Three Million Dollar Export</dd>
+                            <dt>May, 2012</dt>
+                            <dd>Presidential Award for Five Million Dollar Export</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="sec1__slide3">
+                <div class="g--section wrap">
+                    <h1 class="font__header">C.I/BRAND</h1>
+                    <img src="image/figure2.jpg" alt="" class="img--3">
+                </div>
+            </div>
+            <div class="slide" id="sec1__slide4">
+                <div class="g--section wrap">
+                    <h1 class="font__header">RIMA 지사</h1>
+
+                    <div class="wrap__center">
+                        <article>
+                            <h2 class="font__title">Head Office</h2>
+                            <p>광주광영식 서구 매월동 946번지 매월종합상가 203동 208호</p>
+                            <p>MAEWOL JONGHAPSANGGA 203-208, MAEWOL-DONG 946, SEOGU, GWANGJU CITY, KOREA</p>
+                            <p>T.062-610-5077 / F.062-610-5078 / e-mail. rimaglobal@rimaglobal.com</p>
+                        </article>
+                        <article>
+                            <h2 class="font__title">LA Office</h2>
+                            <p>6279 E. Slauson Ave #300 Commerce CA 90040</p>
+                            <p>T.1-323-605-9415 / F.1-323-728-3141 / e-mail.info@everhillsfoods.com</p>
+                        </article>
+                        <article>
+                            <h2 class="font__title">Storage</h2>
+                            <p></p>
+                            <p>510 JESUNG-RI, WUNGPO-MYEON, IKSAN-CITY, JEONRABUK-DO, KOREA</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="sec1__slide5">
+                <div class="g--section wrap">
+                    <h1 class="font__header">RIMA OF THE WORLD</h1>
+                    <div class="font__title wrap__center">
+                        <p>RIMA GLOBAL은</p>
+                        <p>믿을 수 있는 맛과 품질에 신선함과 건강을 더하여 </p>
+                        <p>세계 속의 당신과 함께합니다.</p>
+                    </div>
+                    <img src="image/figure3.jpg" alt="" class="img--3">
+                </div>
+            </div>
+            <!--<div class="slide" id="sec1__slide6">
+                <div class="g--section wrap">
+                    <h1 class="font__header">CONTACT</h1>
+                    <div class="font__title wrap__center">
+                        <p>MAEWOL JONGHAPSANGGA 203-208</p>
+                        <p>MAEWOL-DONG 946, SEOGU,</p>
+                        <p>GWANGJU CITY, KOREA</p>
+
+                    </div>
+                </div>
+            </div>-->
         </div>
-        <div class="section" id="section0">
-            <div class="slide" id="slide1">
-                <h1>Slide Backgrounds</h1>
+        <div class="section" id="section2" data-anchor="product">
+            <div class="slide" id="sec2__slide1">
+                <div class="g--section wrap">
+                    <!--<h1 class="font__header">PRODUCT 1</h1>-->
+                    <img src="image/productImg1.jpg" alt="" class="img--1">
+                </div>
             </div>
-            <div class="slide" id="slide2">
-                <h1>Totally customizable</h1>
+            <div class="slide" id="sec2__slide2">
+                <div class="g--section wrap">
+                    <img src="image/productImg2.jpg" alt="" class="img--1">
+                    <!--<h1 class="font__header">PRODUCT 2</h1>-->
+                </div>
             </div>
-            <div class="slide" id="slide3">
-                <h1>Slide Backgrounds</h1>
-            </div>
-            <div class="slide" id="slide4">
-                <h1>Totally customizable</h1>
-            </div>
+
         </div>
-        <div class="section" id="section2">
-            <h1>Lovely images <br />for a lovely page</h1>
-        </div>
-        <div class="section" id="section3">
-            <h1>One Image = One thousand words</h1>
+        <div class="section" id="section3" data-anchor="inquiry">
+            <div class="g--section wrap">
+                <h1 class="font__header">INQUIRY</h1>
+                <!--<div class="font__title wrap__center">
+                    <p>MAEWOL JONGHAPSANGGA 203-208</p>
+                    <p>MAEWOL-DONG 946, SEOGU,</p>
+                    <p>GWANGJU CITY, KOREA</p>
+
+                </div>-->
+                <form action="" class="wrap__center">
+                    <div class="form__wrap">
+                        <label for="email" class="form__label">이메일</label>
+                        <input type="email" id="email" class="form__input">
+                    </div>
+                    <div class="form__wrap">
+                        <label for="content" class="form__label">문의내용</label>
+                        <textarea name="content" id="content" cols="30" rows="10" class="form__input-textarea"></textarea>
+                    </div>
+                    <input type="button" value="보내기" class="form__btn">
+                </form>
+            </div>
         </div>
     </div>
 </body>

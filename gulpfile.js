@@ -14,7 +14,7 @@ var paths = {
     css: dist + '/css/*.css'
 };
 var autoprefixerOptions = {
-    browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+    browsers: ['last 2 versions', '> 5%', 'Firefox ESR', 'ie 8', 'ie 9', 'ie 10']
 };
 
 gulp.task('js:combine', function() {

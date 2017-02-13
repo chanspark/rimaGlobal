@@ -1,4 +1,29 @@
 .header {
-    background: white;
+    background: rgba(white, 0.7);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 999;
     // background: linear-gradient(#e98a00, #f5aa2f);
+}
+
+.header__logo {
+    float: left;
+    margin-top: 20px;
+    img {
+        width: 150px;
+    }
+}
+
+.header__menu {
+    float: right;
+    line-height: 70px;
+}
+
+.header__menu-list {
+    float: left;
+    margin-right: 15px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
