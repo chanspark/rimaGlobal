@@ -1,9 +1,22 @@
 .font__header {
     color: $color-text;
-    font-size: $font-xbig;
+    // font-size: $font-xbig;
     font-weight: $font-light;
-    // transform: translate(100px 0px);
-    // padding-top: 300px;
+    // font-weight: 600;
+    font-family: $font-typo;
+}
+
+.font__header-big {
+    @extend .font__header;
+    font-size: $font-xxbig;
+    color: white;
+}
+
+.font__header-sub {
+    @extend .font__header;
+    color: $color-2;
+    font-size: $font-xbig;
+    margin: 20px 0 0;
 }
 
 .font__text {
@@ -66,4 +79,14 @@
     border: 1px solid black;
     padding: 10px;
     cursor: pointer;
+}
+
+.rounds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    // background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(120deg, transparent 0%, rgba(#fdfbfb, 0.1) 100%);
+    // z-index: -1;
 }

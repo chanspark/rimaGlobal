@@ -12,14 +12,18 @@ $color-subtext: #888888; //dark grey
 $color-lighttext: #bdbdbd; //dark grey
 $color-border: #dfdfdf; //grey
 $color-bg: #fafafa; //very light grey
-$color-tag1: #4c91e2; //
-$color-tag2: #00c8d3; //
-$color-tag3: #ffc387; //
-$color-tag4: #ff78a5; //
-$color-tag5: #93d847; //
-$color-tag6: #ff7d5f; //
-$color-tag7: #f35e73; //
-$color-tag8: #998fdd; //
+$color-2: #273240;
+$color-3: #176cd9;
+$color-4: #22a2a6;
+$color-5: #fd3f77;
+// $color-tag1: #4c91e2; //
+// $color-tag2: #00c8d3; //
+// $color-tag3: #ffc387; //
+// $color-tag4: #ff78a5; //
+// $color-tag5: #93d847; //
+// $color-tag6: #ff7d5f; //
+// $color-tag7: #f35e73; //
+// $color-tag8: #998fdd; //
 // $color-secondary: #ff4b69; //red
 $color-success: #16b972; //green
 $color-error: #ff4b69; //red
@@ -39,6 +43,8 @@ $font-alllang: 'Noto Sans KR',
 '돋움',
 dotum,
 sans-serif;
+$font-typo: 'Chewy',
+'cursive';
 // 폰트 굵기 설정
 $font-light: 300;
 $font-regular: 400;
@@ -52,7 +58,7 @@ $font-mobile: 16px;
 $font-medium: 18px;
 $font-big: 22px;
 $font-xbig: 32px;
-$font-xxbig: 36px;
+$font-xxbig: 50px;
 // 반응형 breakpoints 설정
 $breakpoint-470: 470px;
 $breakpoint-600: 600px;
