@@ -555,14 +555,14 @@ p {
 	margin: 0;
 }
 
-/* line 109, src/sass/base/_site-settings.scss */
+/* line 110, src/sass/base/_site-settings.scss */
 ::-webkit-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 18px;
 	font-size: 400;
 }
 
-/* line 115, src/sass/base/_site-settings.scss */
+/* line 116, src/sass/base/_site-settings.scss */
 :-moz-placeholder {
 	/* Firefox 18- */
 	color: #dfdfdf;
@@ -570,7 +570,7 @@ p {
 	font-size: 400;
 }
 
-/* line 122, src/sass/base/_site-settings.scss */
+/* line 123, src/sass/base/_site-settings.scss */
 ::-moz-placeholder {
 	/* Firefox 19+ */
 	color: #dfdfdf;
@@ -578,21 +578,21 @@ p {
 	font-size: 400;
 }
 
-/* line 129, src/sass/base/_site-settings.scss */
+/* line 130, src/sass/base/_site-settings.scss */
 input:-ms-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 18px;
 	font-size: 400;
 }
 
-/* line 135, src/sass/base/_site-settings.scss */
+/* line 136, src/sass/base/_site-settings.scss */
 :-ms-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 18px;
 	font-size: 400;
 }
 
-/* line 142, src/sass/base/_site-settings.scss */
+/* line 143, src/sass/base/_site-settings.scss */
 body {
 	background: #fafafa;
 	color: #444444;
@@ -601,7 +601,7 @@ body {
 	font-weight: 400;
 }
 
-/* line 150, src/sass/base/_site-settings.scss */
+/* line 151, src/sass/base/_site-settings.scss */
 button {
 	background: transparent;
 	border: none;
@@ -612,25 +612,25 @@ button {
 	padding: 0;
 }
 
-/* line 161, src/sass/base/_site-settings.scss */
+/* line 162, src/sass/base/_site-settings.scss */
 button a {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
 
-/* line 169, src/sass/base/_site-settings.scss */
+/* line 170, src/sass/base/_site-settings.scss */
 a {
 	color: #444444;
 	text-decoration: none;
 }
 
-/* line 172, src/sass/base/_site-settings.scss */
+/* line 173, src/sass/base/_site-settings.scss */
 a:visited {
 	text-decoration: none;
 }
 
-/* line 179, src/sass/base/_site-settings.scss */
+/* line 180, src/sass/base/_site-settings.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -638,7 +638,7 @@ button:focus {
 	outline: none;
 }
 
-/* line 187, src/sass/base/_site-settings.scss */
+/* line 188, src/sass/base/_site-settings.scss */
 textarea {
 	resize: none;
 	-moz-appearance: none;
@@ -646,31 +646,31 @@ textarea {
 	appearance: none;
 }
 
-/* line 200, src/sass/base/_site-settings.scss */
+/* line 201, src/sass/base/_site-settings.scss */
 input {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
 }
 
-/* line 209, src/sass/base/_site-settings.scss */
+/* line 210, src/sass/base/_site-settings.scss */
 input[type="search"] {
 	border: 0;
 }
 
-/* line 217, src/sass/base/_site-settings.scss */
+/* line 218, src/sass/base/_site-settings.scss */
 input[type="checkbox"],
 input[type="radio"] {
 	display: none;
 }
 
-/* line 231, src/sass/base/_site-settings.scss */
+/* line 232, src/sass/base/_site-settings.scss */
 input[type="checkbox"]:focus + label,
 input[type="radio"]:focus + label {
 	border: 1px solid #a50c59;
 }
 
-/* line 236, src/sass/base/_site-settings.scss */
+/* line 237, src/sass/base/_site-settings.scss */
 select {
 	border-color: #888888;
 	width: 90px;
@@ -682,19 +682,19 @@ select {
 	appearance: none;
 }
 
-/* line 247, src/sass/base/_site-settings.scss */
+/* line 248, src/sass/base/_site-settings.scss */
 select::-ms-expand {
 	display: none;
 }
 
-/* line 251, src/sass/base/_site-settings.scss */
+/* line 252, src/sass/base/_site-settings.scss */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-/* line 257, src/sass/base/_site-settings.scss */
+/* line 258, src/sass/base/_site-settings.scss */
 input[type=number] {
 	-moz-appearance: textfield;
 }
@@ -1032,6 +1032,15 @@ h1 {
 	background: #003474;
 	color: white;
 	border: 0;
+}
+
+/* line 1, src/sass/layout/_inquiry.scss */
+.inquiry {
+	background: #1EA2CA;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
 }
 
 /* line 1, src/sass/modules/_style.scss */
