@@ -34,13 +34,22 @@
     margin-top: 80px;
 }
 
+.clearfix {
+    &::after {
+        content: " ";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+
 .btn {
     cursor: pointer;
     font-size: $font-ssmall;
     //  font: $font-normal 14px/14px 'Spoqa Han Sans', sans-serif;
     color: white;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     text-align: center;
     // line-height: 36px;
     padding: 0 10px;
@@ -50,6 +59,7 @@
     box-sizing: border-box;
     transition: all 0.3s;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+    &:hover {}
 }
 
 .btn--small {
@@ -62,7 +72,8 @@
 
 .btn--ssmall {
     @extend .btn;
-    width: 100px;
+    min-width: 100px;
+    display: inline-block;
     height: 40px;
     line-height: 40px;
     letter-spacing: 1px;
@@ -93,5 +104,29 @@
     &:hover {
         margin-top: 18px;
         // background: rgba($color-2, 0.8);
+    }
+}
+
+.btn--products {
+    background: white;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 10px 20px;
+    &:hover {
+        background: rgba(white, 0.9);
+    }
+    a {
+        color: $color-5;
+    }
+}
+
+.btn--products--selected {
+    @extend .btn--products;
+    background: $color-2;
+    &:hover {
+        background: rgba($color-2, 0.8);
+    }
+    a {
+        color: white;
     }
 }

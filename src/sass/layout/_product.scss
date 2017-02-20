@@ -1,5 +1,146 @@
 .product {
     background: $color-5;
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.product__wrap {
+    // width: 1200px;
+    display: block;
+    margin-top: 80px;
+}
+
+.product__submenu {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.product__main {
+    width: 60%;
+    height: 350px;
+    background: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product__main--img {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    img {
+        min-width: 100%;
+    }
+}
+
+.product__main--desc {
+    float: right;
+    width: 40%;
+    margin: 5% 5%;
+    text-align: left;
+}
+
+.product--text {
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.product--text-w {
+    @extend .product--text;
+    color: white;
+    margin-top: 20px;
+}
+
+.product__list {
+    width: 80%;
+    margin: 100px auto 30px;
+    text-align: left;
+    // overflow: hidden;
+}
+
+.product__list--img {
+    float: left;
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
+    img {}
+}
+
+.product__list--desc {
+    float: right;
+    width: 50%;
+    margin: 0 5%;
+}
+
+.product__list--date {
+    display: block;
+}
+
+.product__date-check {
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.product__date-mark {
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background: $color-6;
+    margin: 0 auto 5px // margin-bottom: 5px;
+    // color: $color-border;
+}
+
+.product__date-mark {
+    background: $color-6;
+}
+
+.product__date-label {
+    color: $color-6;
+}
+
+.product__date-checked {
+    @extend .product__date-check;
+    .product__date-mark {
+        @extend .product__date-mark;
+        background: white;
+    }
+    .product__date-label {
+        color: white;
+    }
+}
+
+.product__table {
+    margin: 80px 0 40px;
+    table {
+        width: 60%;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
+        margin: 30px auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+        overflow: hidden;
+    }
+    tr {
+        height: 50px;
+    }
+    tr {
+        &:nth-child(even) {
+            background: $color-7;
+        }
+    }
+    th {
+        background: $color-8;
+        color: white;
+        border: 0;
+    }
 }

@@ -27,7 +27,7 @@ h1 {
     background-size: cover;
     padding-top: 85px;
     z-index: -99;
-    background: $color-4;
+    background: #ffd018;
 }
 
 .slide {
@@ -40,7 +40,7 @@ h1 {
 
 #section0 {
     // background-image: url(../image/bg6.jpg);
-    // background: #22a2a6;
+    background: $color-4;
     .img--1 {
         // 이 클래스로 위치를 조정합니다.
         position: absolute;

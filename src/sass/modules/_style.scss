@@ -12,11 +12,25 @@
     color: white;
 }
 
+.font__header-big2 {
+    @extend .font__header-big;
+    // font-size: $font-xxbig;
+    color: $color-2;
+}
+
 .font__header-sub {
     @extend .font__header;
     color: $color-2;
     font-size: $font-xbig;
     margin: 20px 0 0;
+}
+
+.font__header-small {
+    @extend .font__header;
+    color: $color-2;
+    font-size: $font-big;
+    margin: 35px auto 15px;
+    text-align: center;
 }
 
 .font__text {
