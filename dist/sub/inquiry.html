@@ -48,7 +48,7 @@
         <div class="g--full">
             <div class="header__logo">
                 <a href="../index.html">
-                    <img src="../image/logo.png" alt="">
+                    <img src="../image/logo.jpg" alt="리마글로벌 로고">
                 </a>
             </div>
             <div class="header__menu">
@@ -57,7 +57,7 @@
                     <li class="header__menu-list" data-menuanchor="rima"><a href="../index.html">RIMA GLOBAL</a>
                         <span></span></li>
                     <li class="header__menu-list" data-menuanchor="product"><a href="product.html">PRODUCT</a><span></span></li>
-                    <li class="header__menu-list btn--ssmall btn--menu" data-menuanchor="inquiry"><a href="#" style="color: #1EA2CA;">INQUIRY</a></li>
+                    <li class="header__menu-list" data-menuanchor="inquiry"><a href="#">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -65,17 +65,80 @@
     <div class="inquiry">
         <div class="g--full">
             <section class="product__wrap">
-                <h1 class="font__header-big">Inquiry</h1>
-                <form action="" class="wrap__center">
+                <h1 class="font__header-big">Contact</h1>
+                <form action="" class="wrap__inquiry">
+                    <div class="form__group">
+                        <!--<h2>TITLE</h2>-->
+                        <div class="form__wrap">
+                            <!--<input type="email" id="product" class="form__input">-->
+                            <select name="" id="product" class="form__input form__select">
+                            <option value="1">Pear</option>
+                            <option value="2">Grape</option>
+                            <option value="3">Chestnut</option>
+                            <option value="4">Apple</option>
+                            <option value="5">Strawberry</option>
+                            <option value="6">Melon</option>
+                            <option value="7">Persimmon</option>
+                            <option value="8">Dried Persimmon</option>
+                            <option value="9">Mandarin</option>
+                            <option value="10">Mushroom</option>
+                            <option value="11">Plum</option>
+                        </select>
+                            <label for="product" class="form__label">Interested Product</label>
+                        </div>
+                        <div class="form__wrap">
+                            <input type="text" id="subject" class="form__input">
+                            <label for="subject" class="form__label">Subject</label>
+                        </div>
+                        <div class="form__wrap">
+                            <input type="text" id="name" class="form__input">
+                            <label for="name" class="form__label">Name</label>
+                        </div>
+                        <div class="border"></div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__wrap">
+                            <input type="text" id="company" class="form__input">
+                            <label for="company" class="form__label">Company</label>
+                        </div>
+
+                        <div class="form__wrap2">
+                            <input type="text" id="address" class="form__input">
+                            <label for="address" class="form__label">Address</label>
+                        </div>
+                    </div>
                     <div class="form__wrap">
-                        <label for="email" class="form__label">이메일</label>
                         <input type="email" id="email" class="form__input">
+                        <label for="email" class="form__label">Email</label>
                     </div>
                     <div class="form__wrap">
-                        <label for="content" class="form__label">문의내용</label>
-                        <textarea name="content" id="content" cols="30" rows="10" class="form__input-textarea"></textarea>
+                        <input type="number" id="tel" class="form__input">
+                        <label for="tel" class="form__label">Tel</label>
                     </div>
-                    <input type="button" value="보내기" class="form__btn">
+                    <div class="form__wrap">
+                        <input type="number" id="fax" class="form__input">
+                        <label for="fax" class="form__label">Fax</label>
+                    </div>
+
+                    <div class="form__wrap">
+                        <input type="text" id="region" class="form__input">
+                        <label for="region" class="form__label">Region</label>
+                    </div>
+                    <div class="form__wrap">
+                        <input type="text" id="homepage" class="form__input">
+                        <label for="homepage" class="form__label">Homepage</label>
+                    </div>
+                    <div class="form__wrap">
+                        <input type="file" id="attachment" class="form__input">
+                        <label for="attachment" class="form__label">Attachment</label>
+                    </div>
+                    <div class="form__wrap3">
+                        <textarea name="content" id="content" cols="30" rows="10" class="form__input-textarea"></textarea>
+                        <label for="content" class="form__label">Contents</label>
+                    </div>
+                    <div class="border"></div>
+
+                    <input type="button" value="SEND" class="btn--small btn--navy">
                 </form>
             </section>
 

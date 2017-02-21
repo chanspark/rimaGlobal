@@ -45,6 +45,13 @@
     text-align: center;
 }
 
+.border {
+    border-bottom: 1px solid $color-bg;
+    height: 1px;
+    width: 50%;
+    margin: 20px auto 50px;
+}
+
 .img {
     // 이 클래스는 이미지의 기본 속성을 정의합니다.
     box-sizing: border-box;
@@ -60,32 +67,83 @@
     box-shadow: (rgba(black, 0.2) 0px 3px 10px);
 }
 
+.form__group {
+    width: 100%;
+    // margin-top: 100px;
+    // padding-top: 50px;
+}
+
 .form__wrap {
     width: 250px;
-    margin: 0 auto 30px;
+    display: inline-block;
+    margin: 0 10px 15px;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
+    // background: white;
+}
+
+.form__wrap2 {
+    @extend .form__wrap;
+    width: 522px;
+}
+
+.form__wrap3 {
+    @extend .form__wrap;
+    width: 800px;
 }
 
 .form__label {
     display: block;
     text-align: left;
     position: absolute;
-    margin-left: 10px;
+    // margin-left: 10px;
+    color: $color-subtext;
+    top: 0;
+    transition: all 0.3s;
+    font-weight: $font-light;
 }
 
 .form__input {
     width: 100%;
-    border: 1px solid black;
-    height: 30px;
-    margin-top: 20px;
+    // border: 0 solid rgba($color-8, 0.7);
+    border: 1px solid $color-border;
+    height: 40px;
+    margin-top: 25px;
     padding: 0 10px;
     box-sizing: border-box;
+    border-radius: 3px;
+    // box-shadow: 0px;
+    // box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s;
+    font-size: $font-mobile;
+    &:focus {
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+        border: 1px solid $color-9;
+        &+label {
+            // color: white;
+            // color: $color-9;
+        }
+    }
+    &:active {
+        &+label {
+            // color: white;
+            // color: $color-9;
+        }
+    }
 }
 
 .form__input-textarea {
     @extend .form__input;
     height: 150px;
+    padding-top: 5px;
+}
+
+.form__select {
+    background: url('../image/arrow.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    cursor: pointer;
 }
 
 .form__btn {

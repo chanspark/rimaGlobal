@@ -355,10 +355,15 @@ html [type="button"],
 	/* 2 */
 }
 
+/* line 403, src/sass/base/_reset.scss */
+[type="button"] {
+	border: 0;
+}
+
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 408, src/sass/base/_reset.scss */
+/* line 412, src/sass/base/_reset.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -370,7 +375,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 421, src/sass/base/_reset.scss */
+/* line 425, src/sass/base/_reset.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -381,7 +386,7 @@ button:-moz-focusring,
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-/* line 433, src/sass/base/_reset.scss */
+/* line 437, src/sass/base/_reset.scss */
 fieldset {
 	border: 1px solid #c0c0c0;
 	margin: 0 2px;
@@ -394,7 +399,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 447, src/sass/base/_reset.scss */
+/* line 451, src/sass/base/_reset.scss */
 legend {
 	box-sizing: border-box;
 	/* 1 */
@@ -414,7 +419,7 @@ legend {
  * 1. Add the correct display in IE 9-.
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 468, src/sass/base/_reset.scss */
+/* line 472, src/sass/base/_reset.scss */
 progress {
 	display: inline-block;
 	/* 1 */
@@ -425,7 +430,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE.
  */
-/* line 480, src/sass/base/_reset.scss */
+/* line 484, src/sass/base/_reset.scss */
 textarea {
 	overflow: auto;
 }
@@ -434,7 +439,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-/* line 490, src/sass/base/_reset.scss */
+/* line 494, src/sass/base/_reset.scss */
 [type="checkbox"],
 [type="radio"] {
 	box-sizing: border-box;
@@ -446,7 +451,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 503, src/sass/base/_reset.scss */
+/* line 507, src/sass/base/_reset.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
 	height: auto;
@@ -456,7 +461,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 514, src/sass/base/_reset.scss */
+/* line 518, src/sass/base/_reset.scss */
 [type="search"] {
 	-webkit-appearance: textfield;
 	/* 1 */
@@ -467,7 +472,7 @@ textarea {
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
-/* line 526, src/sass/base/_reset.scss */
+/* line 530, src/sass/base/_reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
@@ -477,7 +482,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 537, src/sass/base/_reset.scss */
+/* line 541, src/sass/base/_reset.scss */
 ::-webkit-file-upload-button {
 	-webkit-appearance: button;
 	/* 1 */
@@ -491,7 +496,7 @@ textarea {
  * Add the correct display in IE 9-.
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
-/* line 554, src/sass/base/_reset.scss */
+/* line 558, src/sass/base/_reset.scss */
 details,
 menu {
 	display: block;
@@ -500,7 +505,7 @@ menu {
 /*
  * Add the correct display in all browsers.
  */
-/* line 567, src/sass/base/_reset.scss */
+/* line 571, src/sass/base/_reset.scss */
 summary {
 	display: list-item;
 }
@@ -510,7 +515,7 @@ summary {
 /**
  * Add the correct display in IE 9-.
  */
-/* line 580, src/sass/base/_reset.scss */
+/* line 584, src/sass/base/_reset.scss */
 canvas {
 	display: inline-block;
 }
@@ -518,7 +523,7 @@ canvas {
 /**
  * Add the correct display in IE.
  */
-/* line 589, src/sass/base/_reset.scss */
+/* line 593, src/sass/base/_reset.scss */
 template {
 	display: none;
 }
@@ -528,12 +533,12 @@ template {
 /**
  * Add the correct display in IE 10-.
  */
-/* line 602, src/sass/base/_reset.scss */
+/* line 606, src/sass/base/_reset.scss */
 [hidden] {
 	display: none;
 }
 
-/* line 606, src/sass/base/_reset.scss */
+/* line 610, src/sass/base/_reset.scss */
 ul,
 ol {
 	list-style: none;
@@ -545,24 +550,24 @@ ol {
 	-webkit-padding-start: 0px;
 }
 
-/* line 619, src/sass/base/_reset.scss */
+/* line 623, src/sass/base/_reset.scss */
 dd {
 	margin: 0;
 }
 
-/* line 624, src/sass/base/_reset.scss */
+/* line 628, src/sass/base/_reset.scss */
 p {
 	margin: 0;
 }
 
-/* line 110, src/sass/base/_site-settings.scss */
+/* line 111, src/sass/base/_site-settings.scss */
 ::-webkit-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 18px;
 	font-size: 400;
 }
 
-/* line 116, src/sass/base/_site-settings.scss */
+/* line 117, src/sass/base/_site-settings.scss */
 :-moz-placeholder {
 	/* Firefox 18- */
 	color: #dfdfdf;
@@ -570,7 +575,7 @@ p {
 	font-size: 400;
 }
 
-/* line 123, src/sass/base/_site-settings.scss */
+/* line 124, src/sass/base/_site-settings.scss */
 ::-moz-placeholder {
 	/* Firefox 19+ */
 	color: #dfdfdf;
@@ -578,30 +583,30 @@ p {
 	font-size: 400;
 }
 
-/* line 130, src/sass/base/_site-settings.scss */
+/* line 131, src/sass/base/_site-settings.scss */
 input:-ms-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 18px;
 	font-size: 400;
 }
 
-/* line 136, src/sass/base/_site-settings.scss */
+/* line 137, src/sass/base/_site-settings.scss */
 :-ms-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 18px;
 	font-size: 400;
 }
 
-/* line 143, src/sass/base/_site-settings.scss */
+/* line 144, src/sass/base/_site-settings.scss */
 body {
-	background: #fafafa;
+	background: #efefef;
 	color: #444444;
 	font-size: 13px;
 	font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "돋움", dotum, sans-serif;
 	font-weight: 400;
 }
 
-/* line 151, src/sass/base/_site-settings.scss */
+/* line 152, src/sass/base/_site-settings.scss */
 button {
 	background: transparent;
 	border: none;
@@ -612,25 +617,25 @@ button {
 	padding: 0;
 }
 
-/* line 162, src/sass/base/_site-settings.scss */
+/* line 163, src/sass/base/_site-settings.scss */
 button a {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
 
-/* line 170, src/sass/base/_site-settings.scss */
+/* line 171, src/sass/base/_site-settings.scss */
 a {
 	color: #444444;
 	text-decoration: none;
 }
 
-/* line 173, src/sass/base/_site-settings.scss */
+/* line 174, src/sass/base/_site-settings.scss */
 a:visited {
 	text-decoration: none;
 }
 
-/* line 180, src/sass/base/_site-settings.scss */
+/* line 181, src/sass/base/_site-settings.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -638,7 +643,7 @@ button:focus {
 	outline: none;
 }
 
-/* line 188, src/sass/base/_site-settings.scss */
+/* line 189, src/sass/base/_site-settings.scss */
 textarea {
 	resize: none;
 	-moz-appearance: none;
@@ -646,31 +651,31 @@ textarea {
 	appearance: none;
 }
 
-/* line 201, src/sass/base/_site-settings.scss */
+/* line 202, src/sass/base/_site-settings.scss */
 input {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
 }
 
-/* line 210, src/sass/base/_site-settings.scss */
+/* line 211, src/sass/base/_site-settings.scss */
 input[type="search"] {
 	border: 0;
 }
 
-/* line 218, src/sass/base/_site-settings.scss */
+/* line 219, src/sass/base/_site-settings.scss */
 input[type="checkbox"],
 input[type="radio"] {
 	display: none;
 }
 
-/* line 232, src/sass/base/_site-settings.scss */
+/* line 233, src/sass/base/_site-settings.scss */
 input[type="checkbox"]:focus + label,
 input[type="radio"]:focus + label {
 	border: 1px solid #a50c59;
 }
 
-/* line 237, src/sass/base/_site-settings.scss */
+/* line 238, src/sass/base/_site-settings.scss */
 select {
 	border-color: #888888;
 	width: 90px;
@@ -682,19 +687,19 @@ select {
 	appearance: none;
 }
 
-/* line 248, src/sass/base/_site-settings.scss */
+/* line 249, src/sass/base/_site-settings.scss */
 select::-ms-expand {
 	display: none;
 }
 
-/* line 252, src/sass/base/_site-settings.scss */
+/* line 253, src/sass/base/_site-settings.scss */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-/* line 258, src/sass/base/_site-settings.scss */
+/* line 259, src/sass/base/_site-settings.scss */
 input[type=number] {
 	-moz-appearance: textfield;
 }
@@ -742,10 +747,10 @@ h1 {
 /* line 44, src/sass/base/_fullpage.scss */
 #section0 .img--1 {
 	position: absolute;
-	top: 85px;
+	top: 140px;
 	left: 50%;
-	width: 1100px;
-	margin-left: -550px;
+	width: 1300px;
+	margin-left: -650px;
 	z-index: -1;
 }
 
@@ -856,13 +861,23 @@ h1 {
 	margin: 30px auto;
 }
 
-/* line 57, src/sass/layout/_grids.scss */
+/* line 55, src/sass/layout/_grids.scss */
+.wrap__inquiry {
+	width: 900px;
+	margin: 30px auto;
+	background: white;
+	box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	padding: 50px 0 30px;
+}
+
+/* line 66, src/sass/layout/_grids.scss */
 .wrap__dl dt {
 	width: 100px;
 	display: inline-block;
 }
 
-/* line 63, src/sass/layout/_grids.scss */
+/* line 72, src/sass/layout/_grids.scss */
 .wrap__dl dd {
 	display: inline-block;
 	width: 450px;
@@ -1038,7 +1053,6 @@ h1 {
 .inquiry {
 	background: #1EA2CA;
 	width: 100%;
-	height: 100%;
 	overflow: hidden;
 	text-align: center;
 }
@@ -1090,51 +1104,98 @@ h1 {
 }
 
 /* line 48, src/sass/modules/_style.scss */
+.border {
+	border-bottom: 1px solid #efefef;
+	height: 1px;
+	width: 50%;
+	margin: 20px auto 50px;
+}
+
+/* line 55, src/sass/modules/_style.scss */
 .img, .img__big {
 	box-sizing: border-box;
 	border-radius: 50%;
 	position: absolute;
 }
 
-/* line 55, src/sass/modules/_style.scss */
+/* line 62, src/sass/modules/_style.scss */
 .img__big {
 	width: 400px;
 	height: 400px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
 }
 
-/* line 63, src/sass/modules/_style.scss */
-.form__wrap {
-	width: 250px;
-	margin: 0 auto 30px;
-	position: relative;
-	overflow: hidden;
+/* line 70, src/sass/modules/_style.scss */
+.form__group {
+	width: 100%;
 }
 
-/* line 70, src/sass/modules/_style.scss */
+/* line 76, src/sass/modules/_style.scss */
+.form__wrap, .form__wrap2, .form__wrap3 {
+	width: 250px;
+	display: inline-block;
+	margin: 0 10px 15px;
+	position: relative;
+}
+
+/* line 85, src/sass/modules/_style.scss */
+.form__wrap2 {
+	width: 522px;
+}
+
+/* line 90, src/sass/modules/_style.scss */
+.form__wrap3 {
+	width: 800px;
+}
+
+/* line 95, src/sass/modules/_style.scss */
 .form__label {
 	display: block;
 	text-align: left;
 	position: absolute;
-	margin-left: 10px;
+	color: #888888;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	font-weight: 300;
 }
 
-/* line 77, src/sass/modules/_style.scss */
+/* line 106, src/sass/modules/_style.scss */
 .form__input, .form__input-textarea {
 	width: 100%;
-	border: 1px solid black;
-	height: 30px;
-	margin-top: 20px;
+	border: 1px solid #dfdfdf;
+	height: 40px;
+	margin-top: 25px;
 	padding: 0 10px;
 	box-sizing: border-box;
+	border-radius: 3px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	font-size: 16px;
 }
 
-/* line 86, src/sass/modules/_style.scss */
+/* line 119, src/sass/modules/_style.scss */
+.form__input:focus, .form__input-textarea:focus {
+	box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+	border: 1px solid #1EA2CA;
+}
+
+/* line 135, src/sass/modules/_style.scss */
 .form__input-textarea {
 	height: 150px;
+	padding-top: 5px;
 }
 
-/* line 91, src/sass/modules/_style.scss */
+/* line 141, src/sass/modules/_style.scss */
+.form__select {
+	background: url("../image/arrow.png");
+	background-size: 15px;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	cursor: pointer;
+}
+
+/* line 149, src/sass/modules/_style.scss */
 .form__btn {
 	background: #fff;
 	border: 1px solid black;
@@ -1142,7 +1203,7 @@ h1 {
 	cursor: pointer;
 }
 
-/* line 98, src/sass/modules/_style.scss */
+/* line 156, src/sass/modules/_style.scss */
 .rounds {
 	position: absolute;
 	top: 0;
@@ -1154,46 +1215,54 @@ h1 {
 
 /* line 1, src/sass/modules/_header.scss */
 .header {
-	background: transparent;
+	background: white;
 	width: 100%;
 	height: 70px;
 	position: fixed;
 	z-index: 999;
+	box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* line 11, src/sass/modules/_header.scss */
+/* line 12, src/sass/modules/_header.scss */
 .header__logo {
 	float: left;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
-/* line 14, src/sass/modules/_header.scss */
+/* line 15, src/sass/modules/_header.scss */
 .header__logo img {
-	width: 150px;
+	width: 110px;
 }
 
-/* line 19, src/sass/modules/_header.scss */
+/* line 20, src/sass/modules/_header.scss */
 .header__menu {
 	float: right;
 	line-height: 70px;
 }
 
-/* line 24, src/sass/modules/_header.scss */
+/* line 25, src/sass/modules/_header.scss */
 .header__menu-list {
-	font-size: 12px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	float: left;
 	margin-right: 40px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
 
-/* line 30, src/sass/modules/_header.scss */
+/* line 32, src/sass/modules/_header.scss */
 .header__menu-list:last-child {
 	margin-right: 0;
 }
 
-/* line 33, src/sass/modules/_header.scss */
+/* line 35, src/sass/modules/_header.scss */
 .header__menu-list a {
-	color: #fff;
+	color: #444444;
+}
+
+/* line 38, src/sass/modules/_header.scss */
+.header__menu-list:hover {
+	margin-top: -3px;
 }
 
 /* line 1, src/sass/states/_states.scss */
