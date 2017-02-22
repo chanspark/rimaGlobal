@@ -44,12 +44,16 @@ h1 {
     .img--1 {
         // 이 클래스로 위치를 조정합니다.
         position: absolute;
-        top: 140px;
+        top: 100px;
         left: 50%;
         // width: 1200px;
         width: 1300px;
         margin-left: -650px;
         z-index: -1;
+        @include responsive(mediumScreens) {
+            width: 1000px;
+            margin-left: -500px;
+        }
     }
     h1 {
         margin-top: 340px;

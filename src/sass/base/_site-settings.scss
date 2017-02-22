@@ -4,9 +4,18 @@
 // @import "compass/reset";
 // @import "compass/css3";
 // 기본 색상 변수 설정
+@font-face {
+    font-family: 'HandVetica';
+    src: url('font/HandVetica.ttf.woff') format('woff'), url('font/HandVetica.ttf.svg#HandVetica') format('svg'), url('font/HandVetica.ttf.eot'), url('font/HandVetica.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $color-primary: #a50c59;
-$color-primary-lighten: lighten($color-primary, 5%); //pink orange
-$color-primary-darken: darken($color-primary, 5%); //pink orange
+$color-primary-lighten: lighten($color-primary,
+5%); //pink orange
+$color-primary-darken: darken($color-primary,
+5%); //pink orange
 $color-text: #444444; //black
 $color-subtext: #888888; //dark grey
 $color-lighttext: #bdbdbd; //dark grey
@@ -21,6 +30,7 @@ $color-7: #f4f4f4;
 $color-8: #003474;
 $color-9: #1EA2CA;
 $color-10: #076784;
+$color-grape: #b33ffd;
 // $color-tag1: #4c91e2; //
 // $color-tag2: #00c8d3; //
 // $color-tag3: #ffc387; //
@@ -48,7 +58,7 @@ $font-alllang: 'Noto Sans KR',
 '돋움',
 dotum,
 sans-serif;
-$font-typo: 'Chewy',
+$font-typo: 'HandVetica',
 'cursive';
 // 폰트 굵기 설정
 $font-light: 300;
@@ -61,9 +71,9 @@ $font-small: 13px;
 $font-normal: 14px;
 $font-mobile: 16px;
 $font-medium: 18px;
-$font-big: 22px;
-$font-xbig: 32px;
-$font-xxbig: 46px;
+$font-big: 26px;
+$font-xbig: 40px;
+$font-xxbig: 52px;
 // 반응형 breakpoints 설정
 $breakpoint-470: 470px;
 $breakpoint-600: 600px;

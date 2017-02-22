@@ -22,13 +22,19 @@
     @extend .font__header;
     color: $color-2;
     font-size: $font-xbig;
-    margin: 20px 0 0;
+    margin: 20px 0;
+}
+
+.font__header-sub2 {
+    @extend .font__header-sub;
+    color: white;
 }
 
 .font__header-small {
     @extend .font__header;
     color: $color-2;
     font-size: $font-big;
+    // font-weight: $font-bold;
     margin: 35px auto 15px;
     text-align: center;
 }
@@ -80,6 +86,19 @@
     position: relative;
     // overflow: hidden;
     // background: white;
+}
+
+.address__wrap {
+    @extend .form__wrap;
+    text-align: left;
+    height: 250px;
+    width: 32%;
+    margin-left: 0;
+    margin-right: 2%;
+    float: left;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .form__wrap2 {
