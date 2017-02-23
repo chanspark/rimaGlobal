@@ -561,50 +561,50 @@ p {
 }
 
 @font-face {
-	font-family: 'HandVetica';
-	src: url("font/HandVetica.ttf.woff") format("woff"), url("font/HandVetica.ttf.svg#HandVetica") format("svg"), url("font/HandVetica.ttf.eot"), url("font/HandVetica.ttf.eot?#iefix") format("embedded-opentype");
+	font-family: 'orange-juice';
+	src: url("font/orange-juice.ttf.woff") format("woff"), url("font/orange-juice.ttf.svg#orange-juice") format("svg"), url("font/orange-juice.ttf.eot"), url("font/orange-juice.ttf.eot?#iefix") format("embedded-opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
-/* line 121, src/sass/base/_site-settings.scss */
+/* line 127, src/sass/base/_site-settings.scss */
 ::-webkit-input-placeholder {
 	color: #dfdfdf;
-	font-weight: 18px;
+	font-weight: 22px;
 	font-size: 400;
 }
 
-/* line 127, src/sass/base/_site-settings.scss */
+/* line 133, src/sass/base/_site-settings.scss */
 :-moz-placeholder {
 	/* Firefox 18- */
 	color: #dfdfdf;
-	font-weight: 18px;
+	font-weight: 22px;
 	font-size: 400;
 }
 
-/* line 134, src/sass/base/_site-settings.scss */
+/* line 140, src/sass/base/_site-settings.scss */
 ::-moz-placeholder {
 	/* Firefox 19+ */
 	color: #dfdfdf;
-	font-weight: 18px;
-	font-size: 400;
-}
-
-/* line 141, src/sass/base/_site-settings.scss */
-input:-ms-input-placeholder {
-	color: #dfdfdf;
-	font-weight: 18px;
+	font-weight: 22px;
 	font-size: 400;
 }
 
 /* line 147, src/sass/base/_site-settings.scss */
-:-ms-input-placeholder {
+input:-ms-input-placeholder {
 	color: #dfdfdf;
-	font-weight: 18px;
+	font-weight: 22px;
 	font-size: 400;
 }
 
-/* line 154, src/sass/base/_site-settings.scss */
+/* line 153, src/sass/base/_site-settings.scss */
+:-ms-input-placeholder {
+	color: #dfdfdf;
+	font-weight: 22px;
+	font-size: 400;
+}
+
+/* line 160, src/sass/base/_site-settings.scss */
 body {
 	background: #efefef;
 	color: #444444;
@@ -613,7 +613,7 @@ body {
 	font-weight: 400;
 }
 
-/* line 162, src/sass/base/_site-settings.scss */
+/* line 168, src/sass/base/_site-settings.scss */
 button {
 	background: transparent;
 	border: none;
@@ -624,25 +624,25 @@ button {
 	padding: 0;
 }
 
-/* line 173, src/sass/base/_site-settings.scss */
+/* line 179, src/sass/base/_site-settings.scss */
 button a {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
 
-/* line 181, src/sass/base/_site-settings.scss */
+/* line 187, src/sass/base/_site-settings.scss */
 a {
 	color: #444444;
 	text-decoration: none;
 }
 
-/* line 184, src/sass/base/_site-settings.scss */
+/* line 190, src/sass/base/_site-settings.scss */
 a:visited {
 	text-decoration: none;
 }
 
-/* line 191, src/sass/base/_site-settings.scss */
+/* line 197, src/sass/base/_site-settings.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -650,7 +650,7 @@ button:focus {
 	outline: none;
 }
 
-/* line 199, src/sass/base/_site-settings.scss */
+/* line 205, src/sass/base/_site-settings.scss */
 textarea {
 	resize: none;
 	-moz-appearance: none;
@@ -658,31 +658,31 @@ textarea {
 	appearance: none;
 }
 
-/* line 212, src/sass/base/_site-settings.scss */
+/* line 218, src/sass/base/_site-settings.scss */
 input {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
 }
 
-/* line 221, src/sass/base/_site-settings.scss */
+/* line 227, src/sass/base/_site-settings.scss */
 input[type="search"] {
 	border: 0;
 }
 
-/* line 229, src/sass/base/_site-settings.scss */
+/* line 235, src/sass/base/_site-settings.scss */
 input[type="checkbox"],
 input[type="radio"] {
 	display: none;
 }
 
-/* line 243, src/sass/base/_site-settings.scss */
+/* line 249, src/sass/base/_site-settings.scss */
 input[type="checkbox"]:focus + label,
 input[type="radio"]:focus + label {
 	border: 1px solid #a50c59;
 }
 
-/* line 248, src/sass/base/_site-settings.scss */
+/* line 254, src/sass/base/_site-settings.scss */
 select {
 	border-color: #888888;
 	width: 90px;
@@ -694,19 +694,19 @@ select {
 	appearance: none;
 }
 
-/* line 259, src/sass/base/_site-settings.scss */
+/* line 265, src/sass/base/_site-settings.scss */
 select::-ms-expand {
 	display: none;
 }
 
-/* line 263, src/sass/base/_site-settings.scss */
+/* line 269, src/sass/base/_site-settings.scss */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-/* line 269, src/sass/base/_site-settings.scss */
+/* line 275, src/sass/base/_site-settings.scss */
 input[type=number] {
 	-moz-appearance: textfield;
 }
@@ -734,7 +734,7 @@ h1 {
 /* line 26, src/sass/base/_fullpage.scss */
 .section {
 	background-size: cover;
-	padding-top: 85px;
+	padding-top: 110px;
 	z-index: -99;
 	background: #ffd018;
 }
@@ -774,36 +774,47 @@ h1 {
 	margin-top: 340px;
 }
 
-/* line 78, src/sass/base/_fullpage.scss */
+/* line 67, src/sass/base/_fullpage.scss */
+#section1 .wrap__border, #section1 .wrap__border--inquiry {
+	height: 350px;
+}
+
+/* line 70, src/sass/base/_fullpage.scss */
+#section1 .font__text {
+	background: white;
+	height: 100%;
+}
+
+/* line 86, src/sass/base/_fullpage.scss */
 #section7 {
 	background: #1EA2CA;
 }
 
 /*Adding background for the slides
 	* --------------------------------------- */
-/* line 86, src/sass/base/_fullpage.scss */
+/* line 94, src/sass/base/_fullpage.scss */
 #sec1__slide1 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 90, src/sass/base/_fullpage.scss */
+/* line 98, src/sass/base/_fullpage.scss */
 #sec1__slide2 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 94, src/sass/base/_fullpage.scss */
+/* line 102, src/sass/base/_fullpage.scss */
 #sec2__slide1 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
-/* line 99, src/sass/base/_fullpage.scss */
+/* line 107, src/sass/base/_fullpage.scss */
 #sec2__slide2 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
 /* Bottom menu
 	* --------------------------------------- */
-/* line 108, src/sass/base/_fullpage.scss */
+/* line 116, src/sass/base/_fullpage.scss */
 #infoMenu li a {
 	color: #fff;
 }
@@ -837,7 +848,6 @@ h1 {
 /* line 19, src/sass/layout/_grids.scss */
 .g--section {
 	width: 70%;
-	overflow: hidden;
 }
 
 @media only screen and (max-width: 920px) {
@@ -897,6 +907,13 @@ h1 {
 }
 
 /* line 80, src/sass/layout/_grids.scss */
+.wrap__half {
+	float: left;
+	width: 39%;
+	margin: 40px 5%;
+}
+
+/* line 87, src/sass/layout/_grids.scss */
 .wrap__border, .wrap__border--inquiry {
 	border: 10px solid transparent;
 	-o-border-image: url(../image/border.png) 30 stretch;
@@ -905,7 +922,7 @@ h1 {
 	box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* line 87, src/sass/layout/_grids.scss */
+/* line 94, src/sass/layout/_grids.scss */
 .wrap__border--inquiry {
 	width: 900px;
 	margin: 30px auto;
@@ -1095,7 +1112,7 @@ h1 {
 .font__header, .font__header-big, .font__header-big2, .font__header-sub, .font__header-sub2, .font__header-small {
 	color: #444444;
 	font-weight: 300;
-	font-family: "HandVetica", "cursive";
+	font-family: "orange-juice", "cursive";
 }
 
 /* line 9, src/sass/modules/_style.scss */
@@ -1132,7 +1149,7 @@ h1 {
 /* line 42, src/sass/modules/_style.scss */
 .font__text {
 	font-size: 14px;
-	color: #888888;
+	color: #444444;
 }
 
 /* line 48, src/sass/modules/_style.scss */
@@ -1269,7 +1286,7 @@ h1 {
 
 /* line 1, src/sass/modules/_header.scss */
 .header {
-	background: white;
+	background: rgba(255, 255, 255, 0.8);
 	width: 100%;
 	height: 70px;
 	position: fixed;
@@ -1285,7 +1302,7 @@ h1 {
 
 /* line 15, src/sass/modules/_header.scss */
 .header__logo img {
-	width: 110px;
+	width: 100px;
 }
 
 /* line 20, src/sass/modules/_header.scss */
@@ -1322,17 +1339,6 @@ h1 {
 /* line 1, src/sass/states/_states.scss */
 .header__menu-list {
 	position: relative;
-}
-
-/* line 9, src/sass/states/_states.scss */
-.header__menu-list.active span {
-	width: 100px;
-	height: 1px;
-	background: white;
-	position: absolute;
-	top: 50px;
-	left: 50%;
-	margin-left: -50px;
 }
 
 /* line 21, src/sass/states/_states.scss */
@@ -1450,8 +1456,8 @@ h1 {
 /* line 118, src/sass/states/_states.scss */
 .btn--products a, .btn--products--selected a {
 	color: #fd3f77;
-	font-family: "HandVetica", "cursive";
-	font-size: 18px;
+	font-family: "orange-juice", "cursive";
+	font-size: 22px;
 }
 
 /* line 126, src/sass/states/_states.scss */

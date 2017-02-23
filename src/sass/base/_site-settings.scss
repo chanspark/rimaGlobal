@@ -4,9 +4,15 @@
 // @import "compass/reset";
 // @import "compass/css3";
 // 기본 색상 변수 설정
+// @font-face {
+//     font-family: 'HandVetica';
+//     src: url('font/HandVetica.ttf.woff') format('woff'), url('font/HandVetica.ttf.svg#HandVetica') format('svg'), url('font/HandVetica.ttf.eot'), url('font/HandVetica.ttf.eot?#iefix') format('embedded-opentype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 @font-face {
-    font-family: 'HandVetica';
-    src: url('font/HandVetica.ttf.woff') format('woff'), url('font/HandVetica.ttf.svg#HandVetica') format('svg'), url('font/HandVetica.ttf.eot'), url('font/HandVetica.ttf.eot?#iefix') format('embedded-opentype');
+    font-family: 'orange-juice';
+    src: url('font/orange-juice.ttf.woff') format('woff'), url('font/orange-juice.ttf.svg#orange-juice') format('svg'), url('font/orange-juice.ttf.eot'), url('font/orange-juice.ttf.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -58,7 +64,7 @@ $font-alllang: 'Noto Sans KR',
 '돋움',
 dotum,
 sans-serif;
-$font-typo: 'HandVetica',
+$font-typo: 'orange-juice',
 'cursive';
 // 폰트 굵기 설정
 $font-light: 300;
@@ -70,7 +76,7 @@ $font-ssmall: 12px;
 $font-small: 13px;
 $font-normal: 14px;
 $font-mobile: 16px;
-$font-medium: 18px;
+$font-medium: 22px;
 $font-big: 26px;
 $font-xbig: 40px;
 $font-xxbig: 52px;
