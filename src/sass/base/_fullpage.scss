@@ -65,13 +65,9 @@ h1 {
 
 #section1 {
     .wrap__border {
-        height: 350px;
+        height: 460px;
     }
-    .font__text {
-        background: white;
-        // height: 300px;
-        height: 100%;
-    }
+    .font__text {}
     // background: #22a2a6;
 }
 
@@ -81,6 +77,16 @@ h1 {
 
 #section3 {
     // background: #22a2a6;
+}
+
+#section4 {
+    .address__wrap {
+        text-align: center;
+    }
+    .img--4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 #section7 {

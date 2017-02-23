@@ -57,6 +57,11 @@
     margin-bottom: 15px;
 }
 
+.product--subtext {
+    @extend .product--text;
+    color: $color-subtext;
+}
+
 .product--text-w {
     @extend .product--text;
     color: white;

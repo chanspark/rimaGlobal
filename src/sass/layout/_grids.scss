@@ -63,25 +63,35 @@
 }
 
 .wrap__dl {
-    // width: 600px;
+    width: 60%;
+    // margin: 0 auto;
+    float: right;
     dt {
-        width: 100px;
-        // wid
-        // margin-right: 20px;
+        width: 20%;
         display: inline-block;
+        font-size: $font-medium;
+        font-weight: $font-light;
+        vertical-align: middle;
+        text-align: center;
     }
     dd {
         display: inline-block;
-        width: 450px;
-        margin-bottom: 20px;
+        width: 65%;
+        // margin-bottom: 20px;
+        margin: 10px 0 10px 5%;
+        vertical-align: middle;
     }
 }
 
 .wrap__half {
-    display: inline-block;
-    // float: left;
+    // display: inline-block;
     width: 39%;
     margin: 40px 5%;
+}
+
+.wrap__third {
+    width: 74%;
+    margin: 40px 2.5%;
 }
 
 .wrap__border {
