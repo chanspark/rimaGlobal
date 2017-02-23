@@ -908,7 +908,7 @@ h1 {
 
 /* line 80, src/sass/layout/_grids.scss */
 .wrap__half {
-	float: left;
+	display: inline-block;
 	width: 39%;
 	margin: 40px 5%;
 }
