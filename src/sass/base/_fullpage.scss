@@ -38,18 +38,24 @@ h1 {
 /* Defining each section background and styles
 	* --------------------------------------- */
 
+.ab-img {
+    position: absolute;
+    z-index: -1;
+}
+
 #section0 {
     // background-image: url(../image/bg6.jpg);
     background: $color-4;
-    .img--1 {
+    .img--0 {
         // 이 클래스로 위치를 조정합니다.
-        position: absolute;
+        @extend .ab-img;
+        // position: absolute;
         top: 100px;
         left: 50%;
         // width: 1200px;
         width: 1300px;
         margin-left: -650px;
-        z-index: -1;
+        // z-index: -1;
         @include responsive(mediumScreens) {
             width: 1000px;
             margin-left: -500px;
@@ -69,14 +75,119 @@ h1 {
     }
     .font__text {}
     // background: #22a2a6;
+    .img--1 {
+        @extend .ab-img;
+        // position: absolute;
+        top: 25%;
+        left: 50%;
+        margin-left: -700px;
+        // z-index: -1;
+        width: 1400px;
+    }
 }
 
 #section2 {
     // background: #22a2a6;
+    // position: absolute;
+    .img--2-1 {
+        @extend .ab-img;
+        // position: absolute;
+        top: 0;
+        left: -220px;
+        // z-index: -1;
+    }
+    .img--2-2 {
+        @extend .ab-img;
+        top: -70px;
+        right: -200px;
+    }
+    .img--2-3 {
+        @extend .ab-img;
+        bottom: -180px;
+        left: -100px;
+    }
+    .img--2-4 {
+        @extend .ab-img;
+        bottom: -110px;
+        right: 120px;
+    }
+    .img--2-5 {
+        @extend .ab-img;
+        right: -130px;
+        bottom: -100px;
+    }
 }
 
 #section3 {
-    // background: #22a2a6;
+    .img--3-1 {
+        @extend .ab-img;
+        width: 220px;
+        top: 90px;
+        left: -160px;
+        transform: rotate(-20deg);
+    }
+    .img--3-2 {
+        @extend .ab-img;
+        width: 150px;
+        bottom: -90px;
+        left: -100px;
+    }
+    .img--3-3 {
+        @extend .ab-img;
+        width: 150px;
+        bottom: -150px;
+        left: 70px;
+        transform: rotate(-15deg);
+    }
+    .img--3-4 {
+        @extend .ab-img;
+        width: 120px;
+        left: 230px;
+        bottom: -120px;
+        transform: rotate(20deg);
+        // transform: rotate(-10deg);
+    }
+    .img--3-5 {
+        @extend .ab-img;
+        width: 200px;
+        left: 360px;
+        bottom: -110px;
+        transform: rotate(-5deg);
+    }
+    .img--3-6 {
+        @extend .ab-img;
+        width: 140px;
+        bottom: -170px;
+        right: 270px;
+        transform: rotate(15deg);
+    }
+    .img--3-7 {
+        @extend .ab-img;
+        width: 110px;
+        bottom: -200px;
+        right: 170px;
+        transform: rotate(15deg);
+    }
+    .img--3-8 {
+        @extend .ab-img;
+        width: 110px;
+        bottom: -110px;
+        right: 90px;
+        transform: rotate(-20deg);
+    }
+    .img--3-9 {
+        @extend .ab-img;
+        width: 160px;
+        right: -80px;
+        bottom: -130px;
+        transform: rotate(25deg);
+    }
+    .img--3-10 {
+        @extend .ab-img;
+        width: 120px;
+        right: -100px;
+        bottom: 100px;
+    }
 }
 
 #section4 {

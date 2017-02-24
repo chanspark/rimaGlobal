@@ -747,79 +747,207 @@ h1 {
 /* Defining each section background and styles
 	* --------------------------------------- */
 /* line 41, src/sass/base/_fullpage.scss */
+.ab-img, #section0 .img--0, #section1 .img--1, #section2 .img--2-1, #section2 .img--2-2, #section2 .img--2-3, #section2 .img--2-4, #section2 .img--2-5, #section3 .img--3-1, #section3 .img--3-2, #section3 .img--3-3, #section3 .img--3-4, #section3 .img--3-5, #section3 .img--3-6, #section3 .img--3-7, #section3 .img--3-8, #section3 .img--3-9, #section3 .img--3-10 {
+	position: absolute;
+	z-index: -1;
+}
+
+/* line 46, src/sass/base/_fullpage.scss */
 #section0 {
 	background: #22a2a6;
 }
 
-/* line 44, src/sass/base/_fullpage.scss */
-#section0 .img--1 {
-	position: absolute;
+/* line 49, src/sass/base/_fullpage.scss */
+#section0 .img--0 {
 	top: 100px;
 	left: 50%;
 	width: 1300px;
 	margin-left: -650px;
-	z-index: -1;
 }
 
 @media only screen and (max-width: 1239px) {
-	/* line 44, src/sass/base/_fullpage.scss */
-	#section0 .img--1 {
+	/* line 49, src/sass/base/_fullpage.scss */
+	#section0 .img--0 {
 		width: 1000px;
 		margin-left: -500px;
 	}
 }
 
-/* line 58, src/sass/base/_fullpage.scss */
+/* line 64, src/sass/base/_fullpage.scss */
 #section0 h1 {
 	margin-top: 340px;
 }
 
-/* line 67, src/sass/base/_fullpage.scss */
+/* line 73, src/sass/base/_fullpage.scss */
 #section1 .wrap__border, #section1 .wrap__border--inquiry {
 	height: 460px;
 }
 
-/* line 83, src/sass/base/_fullpage.scss */
+/* line 78, src/sass/base/_fullpage.scss */
+#section1 .img--1 {
+	top: 25%;
+	left: 50%;
+	margin-left: -700px;
+	width: 1400px;
+}
+
+/* line 92, src/sass/base/_fullpage.scss */
+#section2 .img--2-1 {
+	top: 0;
+	left: -220px;
+}
+
+/* line 99, src/sass/base/_fullpage.scss */
+#section2 .img--2-2 {
+	top: -70px;
+	right: -200px;
+}
+
+/* line 104, src/sass/base/_fullpage.scss */
+#section2 .img--2-3 {
+	bottom: -180px;
+	left: -100px;
+}
+
+/* line 109, src/sass/base/_fullpage.scss */
+#section2 .img--2-4 {
+	bottom: -110px;
+	right: 120px;
+}
+
+/* line 114, src/sass/base/_fullpage.scss */
+#section2 .img--2-5 {
+	right: -130px;
+	bottom: -100px;
+}
+
+/* line 122, src/sass/base/_fullpage.scss */
+#section3 .img--3-1 {
+	width: 220px;
+	top: 90px;
+	left: -160px;
+	-webkit-transform: rotate(-20deg);
+	        transform: rotate(-20deg);
+}
+
+/* line 129, src/sass/base/_fullpage.scss */
+#section3 .img--3-2 {
+	width: 150px;
+	bottom: -90px;
+	left: -100px;
+}
+
+/* line 135, src/sass/base/_fullpage.scss */
+#section3 .img--3-3 {
+	width: 150px;
+	bottom: -150px;
+	left: 70px;
+	-webkit-transform: rotate(-15deg);
+	        transform: rotate(-15deg);
+}
+
+/* line 142, src/sass/base/_fullpage.scss */
+#section3 .img--3-4 {
+	width: 120px;
+	left: 230px;
+	bottom: -120px;
+	-webkit-transform: rotate(20deg);
+	        transform: rotate(20deg);
+}
+
+/* line 150, src/sass/base/_fullpage.scss */
+#section3 .img--3-5 {
+	width: 200px;
+	left: 360px;
+	bottom: -110px;
+	-webkit-transform: rotate(-5deg);
+	        transform: rotate(-5deg);
+}
+
+/* line 157, src/sass/base/_fullpage.scss */
+#section3 .img--3-6 {
+	width: 140px;
+	bottom: -170px;
+	right: 270px;
+	-webkit-transform: rotate(15deg);
+	        transform: rotate(15deg);
+}
+
+/* line 164, src/sass/base/_fullpage.scss */
+#section3 .img--3-7 {
+	width: 110px;
+	bottom: -200px;
+	right: 170px;
+	-webkit-transform: rotate(15deg);
+	        transform: rotate(15deg);
+}
+
+/* line 171, src/sass/base/_fullpage.scss */
+#section3 .img--3-8 {
+	width: 110px;
+	bottom: -110px;
+	right: 90px;
+	-webkit-transform: rotate(-20deg);
+	        transform: rotate(-20deg);
+}
+
+/* line 178, src/sass/base/_fullpage.scss */
+#section3 .img--3-9 {
+	width: 160px;
+	right: -80px;
+	bottom: -130px;
+	-webkit-transform: rotate(25deg);
+	        transform: rotate(25deg);
+}
+
+/* line 185, src/sass/base/_fullpage.scss */
+#section3 .img--3-10 {
+	width: 120px;
+	right: -100px;
+	bottom: 100px;
+}
+
+/* line 194, src/sass/base/_fullpage.scss */
 #section4 .address__wrap {
 	text-align: center;
 }
 
-/* line 86, src/sass/base/_fullpage.scss */
+/* line 197, src/sass/base/_fullpage.scss */
 #section4 .img--4 {
 	width: 100%;
 	margin-bottom: 30px;
 }
 
-/* line 92, src/sass/base/_fullpage.scss */
+/* line 203, src/sass/base/_fullpage.scss */
 #section7 {
 	background: #1EA2CA;
 }
 
 /*Adding background for the slides
 	* --------------------------------------- */
-/* line 100, src/sass/base/_fullpage.scss */
+/* line 211, src/sass/base/_fullpage.scss */
 #sec1__slide1 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 104, src/sass/base/_fullpage.scss */
+/* line 215, src/sass/base/_fullpage.scss */
 #sec1__slide2 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 108, src/sass/base/_fullpage.scss */
+/* line 219, src/sass/base/_fullpage.scss */
 #sec2__slide1 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
-/* line 113, src/sass/base/_fullpage.scss */
+/* line 224, src/sass/base/_fullpage.scss */
 #sec2__slide2 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
 /* Bottom menu
 	* --------------------------------------- */
-/* line 122, src/sass/base/_fullpage.scss */
+/* line 233, src/sass/base/_fullpage.scss */
 #infoMenu li a {
 	color: #fff;
 }
@@ -926,15 +1054,17 @@ h1 {
 .wrap__half {
 	width: 39%;
 	margin: 40px 5%;
+	position: relative;
 }
 
-/* line 92, src/sass/layout/_grids.scss */
+/* line 93, src/sass/layout/_grids.scss */
 .wrap__third {
 	width: 74%;
 	margin: 40px 2.5%;
+	position: relative;
 }
 
-/* line 97, src/sass/layout/_grids.scss */
+/* line 99, src/sass/layout/_grids.scss */
 .wrap__border, .wrap__border--inquiry {
 	border: 10px solid transparent;
 	-o-border-image: url(../image/border.png) 30 stretch;
@@ -943,7 +1073,7 @@ h1 {
 	box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* line 104, src/sass/layout/_grids.scss */
+/* line 106, src/sass/layout/_grids.scss */
 .wrap__border--inquiry {
 	width: 900px;
 	margin: 30px auto;
