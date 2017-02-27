@@ -567,14 +567,21 @@ p {
 	font-style: normal;
 }
 
-/* line 127, src/sass/base/_site-settings.scss */
+@font-face {
+	font-family: 'koblenz-regularregular';
+	src: url("font/koblenz-regular-webfont.woff2") format("woff2"), url("font/koblenz-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* line 136, src/sass/base/_site-settings.scss */
 ::-webkit-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 22px;
 	font-size: 400;
 }
 
-/* line 133, src/sass/base/_site-settings.scss */
+/* line 142, src/sass/base/_site-settings.scss */
 :-moz-placeholder {
 	/* Firefox 18- */
 	color: #dfdfdf;
@@ -582,7 +589,7 @@ p {
 	font-size: 400;
 }
 
-/* line 140, src/sass/base/_site-settings.scss */
+/* line 149, src/sass/base/_site-settings.scss */
 ::-moz-placeholder {
 	/* Firefox 19+ */
 	color: #dfdfdf;
@@ -590,21 +597,21 @@ p {
 	font-size: 400;
 }
 
-/* line 147, src/sass/base/_site-settings.scss */
+/* line 156, src/sass/base/_site-settings.scss */
 input:-ms-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 22px;
 	font-size: 400;
 }
 
-/* line 153, src/sass/base/_site-settings.scss */
+/* line 162, src/sass/base/_site-settings.scss */
 :-ms-input-placeholder {
 	color: #dfdfdf;
 	font-weight: 22px;
 	font-size: 400;
 }
 
-/* line 160, src/sass/base/_site-settings.scss */
+/* line 169, src/sass/base/_site-settings.scss */
 body {
 	background: #efefef;
 	color: #444444;
@@ -613,7 +620,7 @@ body {
 	font-weight: 400;
 }
 
-/* line 168, src/sass/base/_site-settings.scss */
+/* line 177, src/sass/base/_site-settings.scss */
 button {
 	background: transparent;
 	border: none;
@@ -624,25 +631,25 @@ button {
 	padding: 0;
 }
 
-/* line 179, src/sass/base/_site-settings.scss */
+/* line 188, src/sass/base/_site-settings.scss */
 button a {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
 
-/* line 187, src/sass/base/_site-settings.scss */
+/* line 196, src/sass/base/_site-settings.scss */
 a {
 	color: #444444;
 	text-decoration: none;
 }
 
-/* line 190, src/sass/base/_site-settings.scss */
+/* line 199, src/sass/base/_site-settings.scss */
 a:visited {
 	text-decoration: none;
 }
 
-/* line 197, src/sass/base/_site-settings.scss */
+/* line 206, src/sass/base/_site-settings.scss */
 input:focus,
 select:focus,
 textarea:focus,
@@ -650,7 +657,7 @@ button:focus {
 	outline: none;
 }
 
-/* line 205, src/sass/base/_site-settings.scss */
+/* line 214, src/sass/base/_site-settings.scss */
 textarea {
 	resize: none;
 	-moz-appearance: none;
@@ -658,31 +665,31 @@ textarea {
 	appearance: none;
 }
 
-/* line 218, src/sass/base/_site-settings.scss */
+/* line 227, src/sass/base/_site-settings.scss */
 input {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
 }
 
-/* line 227, src/sass/base/_site-settings.scss */
+/* line 236, src/sass/base/_site-settings.scss */
 input[type="search"] {
 	border: 0;
 }
 
-/* line 235, src/sass/base/_site-settings.scss */
+/* line 244, src/sass/base/_site-settings.scss */
 input[type="checkbox"],
 input[type="radio"] {
 	display: none;
 }
 
-/* line 249, src/sass/base/_site-settings.scss */
+/* line 258, src/sass/base/_site-settings.scss */
 input[type="checkbox"]:focus + label,
 input[type="radio"]:focus + label {
 	border: 1px solid #a50c59;
 }
 
-/* line 254, src/sass/base/_site-settings.scss */
+/* line 263, src/sass/base/_site-settings.scss */
 select {
 	border-color: #888888;
 	width: 90px;
@@ -694,19 +701,19 @@ select {
 	appearance: none;
 }
 
-/* line 265, src/sass/base/_site-settings.scss */
+/* line 274, src/sass/base/_site-settings.scss */
 select::-ms-expand {
 	display: none;
 }
 
-/* line 269, src/sass/base/_site-settings.scss */
+/* line 278, src/sass/base/_site-settings.scss */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
 
-/* line 275, src/sass/base/_site-settings.scss */
+/* line 284, src/sass/base/_site-settings.scss */
 input[type=number] {
 	-moz-appearance: textfield;
 }
@@ -918,36 +925,37 @@ h1 {
 	margin-bottom: 30px;
 }
 
-/* line 203, src/sass/base/_fullpage.scss */
-#section7 {
-	background: #1EA2CA;
+/* line 204, src/sass/base/_fullpage.scss */
+#section5 .img--5 {
+	width: 700px;
+	margin-top: 50px;
 }
 
 /*Adding background for the slides
 	* --------------------------------------- */
-/* line 211, src/sass/base/_fullpage.scss */
+/* line 214, src/sass/base/_fullpage.scss */
 #sec1__slide1 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 215, src/sass/base/_fullpage.scss */
+/* line 218, src/sass/base/_fullpage.scss */
 #sec1__slide2 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 219, src/sass/base/_fullpage.scss */
+/* line 222, src/sass/base/_fullpage.scss */
 #sec2__slide1 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
-/* line 224, src/sass/base/_fullpage.scss */
+/* line 227, src/sass/base/_fullpage.scss */
 #sec2__slide2 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
 /* Bottom menu
 	* --------------------------------------- */
-/* line 233, src/sass/base/_fullpage.scss */
+/* line 236, src/sass/base/_fullpage.scss */
 #infoMenu li a {
 	color: #fff;
 }
@@ -1335,6 +1343,11 @@ h1 {
 }
 
 /* line 70, src/sass/modules/_style.scss */
+.font--typo2 {
+	font-family: "koblenz-regularregular", "sans-serif";
+}
+
+/* line 74, src/sass/modules/_style.scss */
 .border {
 	border-bottom: 1px solid #efefef;
 	height: 1px;
@@ -1342,26 +1355,26 @@ h1 {
 	margin: 20px auto 50px;
 }
 
-/* line 77, src/sass/modules/_style.scss */
+/* line 81, src/sass/modules/_style.scss */
 .img, .img__big {
 	box-sizing: border-box;
 	border-radius: 50%;
 	position: absolute;
 }
 
-/* line 84, src/sass/modules/_style.scss */
+/* line 88, src/sass/modules/_style.scss */
 .img__big {
 	width: 400px;
 	height: 400px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
 }
 
-/* line 92, src/sass/modules/_style.scss */
+/* line 96, src/sass/modules/_style.scss */
 .form__group {
 	width: 100%;
 }
 
-/* line 98, src/sass/modules/_style.scss */
+/* line 102, src/sass/modules/_style.scss */
 .form__wrap, .address__wrap, .form__wrap2, .form__wrap3 {
 	width: 250px;
 	display: inline-block;
@@ -1369,7 +1382,7 @@ h1 {
 	position: relative;
 }
 
-/* line 107, src/sass/modules/_style.scss */
+/* line 111, src/sass/modules/_style.scss */
 .address__wrap {
 	text-align: left;
 	height: 250px;
@@ -1379,22 +1392,22 @@ h1 {
 	float: left;
 }
 
-/* line 115, src/sass/modules/_style.scss */
+/* line 119, src/sass/modules/_style.scss */
 .address__wrap:last-child {
 	margin-right: 0;
 }
 
-/* line 120, src/sass/modules/_style.scss */
+/* line 124, src/sass/modules/_style.scss */
 .form__wrap2 {
 	width: 522px;
 }
 
-/* line 125, src/sass/modules/_style.scss */
+/* line 129, src/sass/modules/_style.scss */
 .form__wrap3 {
 	width: 800px;
 }
 
-/* line 130, src/sass/modules/_style.scss */
+/* line 134, src/sass/modules/_style.scss */
 .form__label {
 	display: block;
 	text-align: left;
@@ -1406,7 +1419,7 @@ h1 {
 	font-weight: 300;
 }
 
-/* line 141, src/sass/modules/_style.scss */
+/* line 145, src/sass/modules/_style.scss */
 .form__input, .form__input-textarea {
 	width: 100%;
 	border: 1px solid #dfdfdf;
@@ -1420,19 +1433,19 @@ h1 {
 	font-size: 16px;
 }
 
-/* line 154, src/sass/modules/_style.scss */
+/* line 158, src/sass/modules/_style.scss */
 .form__input:focus, .form__input-textarea:focus {
 	box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
 	border: 1px solid #1EA2CA;
 }
 
-/* line 170, src/sass/modules/_style.scss */
+/* line 174, src/sass/modules/_style.scss */
 .form__input-textarea {
 	height: 150px;
 	padding-top: 5px;
 }
 
-/* line 176, src/sass/modules/_style.scss */
+/* line 180, src/sass/modules/_style.scss */
 .form__select {
 	background: url("../image/arrow.png");
 	background-size: 15px;
@@ -1441,7 +1454,7 @@ h1 {
 	cursor: pointer;
 }
 
-/* line 184, src/sass/modules/_style.scss */
+/* line 188, src/sass/modules/_style.scss */
 .form__btn {
 	background: #fff;
 	border: 1px solid black;
@@ -1449,14 +1462,15 @@ h1 {
 	cursor: pointer;
 }
 
-/* line 191, src/sass/modules/_style.scss */
+/* line 195, src/sass/modules/_style.scss */
 .rounds {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: -2;
 	border-radius: 50%;
-	background-image: -webkit-linear-gradient(330deg, transparent 0%, rgba(253, 251, 251, 0.1) 100%);
-	background-image: linear-gradient(120deg, transparent 0%, rgba(253, 251, 251, 0.1) 100%);
+	background-image: -webkit-linear-gradient(330deg, transparent 0%, rgba(253, 251, 251, 0.2) 100%);
+	background-image: linear-gradient(120deg, transparent 0%, rgba(253, 251, 251, 0.2) 100%);
 }
 
 /* line 1, src/sass/modules/_header.scss */

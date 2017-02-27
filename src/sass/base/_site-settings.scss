@@ -17,6 +17,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'koblenz-regularregular';
+    src: url('font/koblenz-regular-webfont.woff2') format('woff2'), url('font/koblenz-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $color-primary: #a50c59;
 $color-primary-lighten: lighten($color-primary,
 5%); //pink orange
@@ -66,6 +73,8 @@ dotum,
 sans-serif;
 $font-typo: 'orange-juice',
 'cursive';
+$font-typo2: 'koblenz-regularregular',
+'sans-serif';
 // 폰트 굵기 설정
 $font-light: 300;
 $font-regular: 400;
