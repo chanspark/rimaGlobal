@@ -28,6 +28,9 @@ h1 {
     padding-top: 110px;
     z-index: -99;
     background: #ffd018;
+    @include responsive(mediumScreens) {
+        padding-top: 80px;
+    }
 }
 
 .slide {
@@ -72,6 +75,9 @@ h1 {
 #section1 {
     .wrap__border {
         height: 460px;
+        @include responsive(mediumScreens) {
+            height: auto;
+        }
     }
     .font__text {}
     // background: #22a2a6;
@@ -83,6 +89,12 @@ h1 {
         margin-left: -700px;
         // z-index: -1;
         width: 1400px;
+        @include responsive(mediumScreens) {
+            width: 100%;
+            margin-left: 0;
+            top: 700px;
+            left: 0;
+        }
     }
 }
 
@@ -197,6 +209,10 @@ h1 {
     .img--4 {
         width: 100%;
         margin-bottom: 30px;
+        @include responsive(mediumScreens) {
+            width: 60%;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -204,6 +220,9 @@ h1 {
     .img--5 {
         width: 700px;
         margin-top: 50px;
+        @include responsive(mediumScreens) {
+            width: 100%;
+        }
     }
 }
 

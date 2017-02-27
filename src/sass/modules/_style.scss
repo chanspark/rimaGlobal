@@ -10,12 +10,21 @@
     @extend .font__header;
     font-size: $font-xxbig;
     color: white;
+    @include responsive(mediumScreens) {
+        font-size: $font-xbig;
+    }
 }
 
 .font__header-big2 {
     @extend .font__header-big;
     // font-size: $font-xxbig;
     color: $color-2;
+}
+
+.font__header-big3 {
+    @extend .font__header-big;
+    // font-size: $font-xxbig;
+    color: $color-text;
 }
 
 .font__header-sub {
@@ -35,6 +44,12 @@
     font-family: $font-alllang;
     font-size: $font-big;
     line-height: 40px;
+    margin-top: 30px;
+    @include responsive(mediumScreens) {
+        font-size: $font-mobile;
+        line-height: 26px;
+        margin-top: 10px;
+    }
 }
 
 .font__header-small {
@@ -118,6 +133,10 @@
     float: left;
     &:last-child {
         margin-right: 0;
+    }
+    @include responsive(mediumScreens) {
+        width: 100%;
+        height: 170px;
     }
 }
 
