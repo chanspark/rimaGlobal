@@ -41,20 +41,22 @@
     // width: 25px;
     // height: 25px;
     // background: #000;
-    position: fixed;
-    display: block;
-    top: 20px;
-    right: 15px;
-    z-index: 99;
-    &:after {
-        // content: url(../image/menu.png);
-        background-image: url(../image/menu.png);
-        background-size: 25px 25px;
-        background-repeat: no-repeat;
-        width: 25px;
-        height: 25px;
+    @include responsive(phoneScreens) {
+        position: fixed;
         display: block;
-        content: "";
+        top: 20px;
+        right: 15px;
+        z-index: 99;
+        &:after {
+            // content: url(../image/menu.png);
+            background-image: url(../image/menu.png);
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            display: block;
+            content: "";
+        }
     }
 }
 

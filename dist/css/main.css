@@ -1651,38 +1651,39 @@ h1 {
 	}
 }
 
-/* line 40, src/sass/modules/_header.scss */
-.header__btn, .header__btn--active {
-	position: fixed;
-	display: block;
-	top: 20px;
-	right: 15px;
-	z-index: 99;
+@media only screen and (max-width: 470px) {
+	/* line 40, src/sass/modules/_header.scss */
+	.header__btn, .header__btn--active {
+		position: fixed;
+		display: block;
+		top: 20px;
+		right: 15px;
+		z-index: 99;
+	}
+	/* line 50, src/sass/modules/_header.scss */
+	.header__btn:after, .header__btn--active:after {
+		background-image: url(../image/menu.png);
+		background-size: 25px 25px;
+		background-repeat: no-repeat;
+		width: 25px;
+		height: 25px;
+		display: block;
+		content: "";
+	}
 }
 
-/* line 49, src/sass/modules/_header.scss */
-.header__btn:after, .header__btn--active:after {
-	background-image: url(../image/menu.png);
-	background-size: 25px 25px;
-	background-repeat: no-repeat;
-	width: 25px;
-	height: 25px;
-	display: block;
-	content: "";
-}
-
-/* line 63, src/sass/modules/_header.scss */
+/* line 65, src/sass/modules/_header.scss */
 .header__btn--active:after {
 	background-image: url(../image/menu2.png);
 }
 
-/* line 68, src/sass/modules/_header.scss */
+/* line 70, src/sass/modules/_header.scss */
 .header__menu--active {
 	right: 0;
 }
 
 @media only screen and (max-width: 470px) {
-	/* line 73, src/sass/modules/_header.scss */
+	/* line 75, src/sass/modules/_header.scss */
 	.header__background {
 		background: rgba(0, 0, 0, 0.4);
 		position: absolute;
@@ -1693,7 +1694,7 @@ h1 {
 	}
 }
 
-/* line 85, src/sass/modules/_header.scss */
+/* line 87, src/sass/modules/_header.scss */
 .header__menu-list {
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -1703,29 +1704,29 @@ h1 {
 	transition: all .3s;
 }
 
-/* line 92, src/sass/modules/_header.scss */
+/* line 94, src/sass/modules/_header.scss */
 .header__menu-list:last-child {
 	margin-right: 0;
 }
 
-/* line 95, src/sass/modules/_header.scss */
+/* line 97, src/sass/modules/_header.scss */
 .header__menu-list a {
 	color: #444444;
 }
 
-/* line 98, src/sass/modules/_header.scss */
+/* line 100, src/sass/modules/_header.scss */
 .header__menu-list:hover {
 	margin-top: -3px;
 }
 
 @media only screen and (max-width: 470px) {
-	/* line 85, src/sass/modules/_header.scss */
+	/* line 87, src/sass/modules/_header.scss */
 	.header__menu-list {
 		float: none;
 		text-align: center;
 		margin-right: 0;
 	}
-	/* line 105, src/sass/modules/_header.scss */
+	/* line 107, src/sass/modules/_header.scss */
 	.header__menu-list:first-child {
 		margin-top: 70px;
 	}
