@@ -32,6 +32,9 @@
     color: $color-2;
     font-size: $font-xbig;
     margin: 20px 0;
+    @include responsive(mediumScreens) {
+        font-size: $font-big;
+    }
 }
 
 .font__header-sub2 {
@@ -134,7 +137,7 @@
     &:last-child {
         margin-right: 0;
     }
-    @include responsive(mediumScreens) {
+    @include responsive(phoneScreens) {
         width: 100%;
         height: 170px;
     }
