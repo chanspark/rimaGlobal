@@ -744,6 +744,7 @@ h1 {
 	padding-top: 110px;
 	z-index: -99;
 	background: #ffd018;
+	overflow: hidden;
 }
 
 @media only screen and (max-width: 470px) {
@@ -753,25 +754,25 @@ h1 {
 	}
 }
 
-/* line 36, src/sass/base/_fullpage.scss */
+/* line 37, src/sass/base/_fullpage.scss */
 .slide {
 	background-size: cover;
 }
 
 /* Defining each section background and styles
 	* --------------------------------------- */
-/* line 44, src/sass/base/_fullpage.scss */
+/* line 45, src/sass/base/_fullpage.scss */
 .ab-img, #section0 .img--0, #section1 .img--1, #section2 .img--2-1, #section2 .img--2-2, #section2 .img--2-3, #section2 .img--2-4, #section2 .img--2-5, #section3 .img--3-1, #section3 .img--3-2, #section3 .img--3-3, #section3 .img--3-4, #section3 .img--3-5, #section3 .img--3-6, #section3 .img--3-7, #section3 .img--3-8, #section3 .img--3-9, #section3 .img--3-10 {
 	position: absolute;
 	z-index: -1;
 }
 
-/* line 49, src/sass/base/_fullpage.scss */
+/* line 50, src/sass/base/_fullpage.scss */
 #section0 {
 	background: #22a2a6;
 }
 
-/* line 52, src/sass/base/_fullpage.scss */
+/* line 53, src/sass/base/_fullpage.scss */
 #section0 .img--0 {
 	top: 100px;
 	left: 50%;
@@ -780,7 +781,7 @@ h1 {
 }
 
 @media only screen and (max-width: 1239px) {
-	/* line 52, src/sass/base/_fullpage.scss */
+	/* line 53, src/sass/base/_fullpage.scss */
 	#section0 .img--0 {
 		width: 1200px;
 		margin-left: -600px;
@@ -788,7 +789,7 @@ h1 {
 }
 
 @media only screen and (max-width: 470px) {
-	/* line 52, src/sass/base/_fullpage.scss */
+	/* line 53, src/sass/base/_fullpage.scss */
 	#section0 .img--0 {
 		width: 700px;
 		margin-left: -350px;
@@ -796,31 +797,31 @@ h1 {
 	}
 }
 
-/* line 72, src/sass/base/_fullpage.scss */
+/* line 73, src/sass/base/_fullpage.scss */
 #section0 h1 {
 	margin-top: 340px;
 }
 
 @media only screen and (max-width: 1239px) {
-	/* line 72, src/sass/base/_fullpage.scss */
+	/* line 73, src/sass/base/_fullpage.scss */
 	#section0 h1 {
 		margin-top: 250px;
 	}
 }
 
-/* line 87, src/sass/base/_fullpage.scss */
+/* line 88, src/sass/base/_fullpage.scss */
 #section1 .wrap__border, #section1 .wrap__border--inquiry {
 	height: 460px;
 }
 
 @media only screen and (max-width: 1239px) {
-	/* line 87, src/sass/base/_fullpage.scss */
+	/* line 88, src/sass/base/_fullpage.scss */
 	#section1 .wrap__border, #section1 .wrap__border--inquiry {
 		height: auto;
 	}
 }
 
-/* line 95, src/sass/base/_fullpage.scss */
+/* line 96, src/sass/base/_fullpage.scss */
 #section1 .img--1 {
 	top: 25%;
 	left: 50%;
@@ -829,7 +830,7 @@ h1 {
 }
 
 @media only screen and (max-width: 1239px) {
-	/* line 95, src/sass/base/_fullpage.scss */
+	/* line 96, src/sass/base/_fullpage.scss */
 	#section1 .img--1 {
 		width: 100%;
 		margin-left: 0;
@@ -838,37 +839,37 @@ h1 {
 	}
 }
 
-/* line 115, src/sass/base/_fullpage.scss */
+/* line 116, src/sass/base/_fullpage.scss */
 #section2 .img--2-1 {
 	top: 0;
 	left: -220px;
 }
 
-/* line 122, src/sass/base/_fullpage.scss */
+/* line 123, src/sass/base/_fullpage.scss */
 #section2 .img--2-2 {
 	top: -70px;
 	right: -200px;
 }
 
-/* line 127, src/sass/base/_fullpage.scss */
+/* line 128, src/sass/base/_fullpage.scss */
 #section2 .img--2-3 {
 	bottom: -180px;
 	left: -100px;
 }
 
-/* line 132, src/sass/base/_fullpage.scss */
+/* line 133, src/sass/base/_fullpage.scss */
 #section2 .img--2-4 {
 	bottom: -110px;
 	right: 120px;
 }
 
-/* line 137, src/sass/base/_fullpage.scss */
+/* line 138, src/sass/base/_fullpage.scss */
 #section2 .img--2-5 {
 	right: -130px;
 	bottom: -100px;
 }
 
-/* line 145, src/sass/base/_fullpage.scss */
+/* line 146, src/sass/base/_fullpage.scss */
 #section3 .img--3-1 {
 	width: 220px;
 	top: 90px;
@@ -877,14 +878,14 @@ h1 {
 	        transform: rotate(-20deg);
 }
 
-/* line 152, src/sass/base/_fullpage.scss */
+/* line 153, src/sass/base/_fullpage.scss */
 #section3 .img--3-2 {
 	width: 150px;
 	bottom: -90px;
 	left: -100px;
 }
 
-/* line 158, src/sass/base/_fullpage.scss */
+/* line 159, src/sass/base/_fullpage.scss */
 #section3 .img--3-3 {
 	width: 150px;
 	bottom: -150px;
@@ -893,7 +894,7 @@ h1 {
 	        transform: rotate(-15deg);
 }
 
-/* line 165, src/sass/base/_fullpage.scss */
+/* line 166, src/sass/base/_fullpage.scss */
 #section3 .img--3-4 {
 	width: 120px;
 	left: 230px;
@@ -902,7 +903,7 @@ h1 {
 	        transform: rotate(20deg);
 }
 
-/* line 173, src/sass/base/_fullpage.scss */
+/* line 174, src/sass/base/_fullpage.scss */
 #section3 .img--3-5 {
 	width: 200px;
 	left: 360px;
@@ -911,7 +912,7 @@ h1 {
 	        transform: rotate(-5deg);
 }
 
-/* line 180, src/sass/base/_fullpage.scss */
+/* line 181, src/sass/base/_fullpage.scss */
 #section3 .img--3-6 {
 	width: 140px;
 	bottom: -170px;
@@ -920,7 +921,7 @@ h1 {
 	        transform: rotate(15deg);
 }
 
-/* line 187, src/sass/base/_fullpage.scss */
+/* line 188, src/sass/base/_fullpage.scss */
 #section3 .img--3-7 {
 	width: 110px;
 	bottom: -200px;
@@ -929,7 +930,7 @@ h1 {
 	        transform: rotate(15deg);
 }
 
-/* line 194, src/sass/base/_fullpage.scss */
+/* line 195, src/sass/base/_fullpage.scss */
 #section3 .img--3-8 {
 	width: 110px;
 	bottom: -110px;
@@ -938,7 +939,7 @@ h1 {
 	        transform: rotate(-20deg);
 }
 
-/* line 201, src/sass/base/_fullpage.scss */
+/* line 202, src/sass/base/_fullpage.scss */
 #section3 .img--3-9 {
 	width: 160px;
 	right: -80px;
@@ -947,40 +948,40 @@ h1 {
 	        transform: rotate(25deg);
 }
 
-/* line 208, src/sass/base/_fullpage.scss */
+/* line 209, src/sass/base/_fullpage.scss */
 #section3 .img--3-10 {
 	width: 120px;
 	right: -100px;
 	bottom: 100px;
 }
 
-/* line 217, src/sass/base/_fullpage.scss */
+/* line 218, src/sass/base/_fullpage.scss */
 #section4 .address__wrap {
 	text-align: center;
 }
 
-/* line 220, src/sass/base/_fullpage.scss */
+/* line 221, src/sass/base/_fullpage.scss */
 #section4 .img--4 {
 	width: 100%;
 	margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 470px) {
-	/* line 220, src/sass/base/_fullpage.scss */
+	/* line 221, src/sass/base/_fullpage.scss */
 	#section4 .img--4 {
 		width: 60%;
 		margin-bottom: 10px;
 	}
 }
 
-/* line 231, src/sass/base/_fullpage.scss */
+/* line 232, src/sass/base/_fullpage.scss */
 #section5 .img--5 {
 	width: 700px;
 	margin-top: 50px;
 }
 
 @media only screen and (max-width: 1239px) {
-	/* line 231, src/sass/base/_fullpage.scss */
+	/* line 232, src/sass/base/_fullpage.scss */
 	#section5 .img--5 {
 		width: 100%;
 	}
@@ -988,29 +989,29 @@ h1 {
 
 /*Adding background for the slides
 	* --------------------------------------- */
-/* line 244, src/sass/base/_fullpage.scss */
+/* line 245, src/sass/base/_fullpage.scss */
 #sec1__slide1 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 248, src/sass/base/_fullpage.scss */
+/* line 249, src/sass/base/_fullpage.scss */
 #sec1__slide2 {
 	background-image: url(../image/bgpic1.jpg);
 }
 
-/* line 252, src/sass/base/_fullpage.scss */
+/* line 253, src/sass/base/_fullpage.scss */
 #sec2__slide1 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
-/* line 257, src/sass/base/_fullpage.scss */
+/* line 258, src/sass/base/_fullpage.scss */
 #sec2__slide2 {
 	background-image: url(../image/bgpic2.jpg);
 }
 
 /* Bottom menu
 	* --------------------------------------- */
-/* line 266, src/sass/base/_fullpage.scss */
+/* line 267, src/sass/base/_fullpage.scss */
 #infoMenu li a {
 	color: #fff;
 }
