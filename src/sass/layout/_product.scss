@@ -15,21 +15,26 @@
 .product__submenu {
     width: 80%;
     margin: 20px auto;
+    @include responsive(mediumScreens) {
+        width: 95%;
+        margin: 20px auto;
+    }
+    @include responsive(phoneScreens) {}
 }
 
 .product__main {
     width: 60%;
     height: 350px;
-    // background: white;
-    // border-radius: 20px;
     margin: 0 auto;
     overflow: hidden;
     margin-top: 20px;
-    // box-sizing: border-box;
-    // box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.15);
-    // border: 10px solid transparent;
-    // border-image: url(../image/border.png) 30 stretch;
-    // box-shadow: inset 0 0 10px #fff;
+    @include responsive(touchScreens) {
+        width: 90%;
+    }
+    @include responsive(phoneScreens) {
+        width: 95%;
+        height: auto;
+    }
 }
 
 .product__main--img {
@@ -38,6 +43,10 @@
     overflow: hidden;
     img {
         min-width: 100%;
+    }
+    @include responsive(phoneScreens) {
+        float: none;
+        width: 100%;
     }
 }
 
@@ -50,6 +59,10 @@
     background: white;
     text-align: left;
     // background: white;
+    @include responsive(phoneScreens) {
+        float: none;
+        width: 90%;
+    }
 }
 
 .product--text {
@@ -73,6 +86,12 @@
     margin: 100px auto 30px;
     text-align: left;
     // overflow: hidden;
+    @include responsive(mediumScreens) {
+        width: 100%;
+    }
+    @include responsive(phoneScreens) {
+        width: 95%;
+    }
 }
 
 .product__list--img {
@@ -90,16 +109,29 @@
         background: white;
         margin-bottom: -2px;
     }
+    @include responsive(phoneScreens) {
+        width: 100%;
+        float: none;
+    }
 }
 
 .product__list--desc {
     float: right;
     width: 50%;
     margin: 0 5%;
+    @include responsive(phoneScreens) {
+        float: none;
+        width: 90%;
+        margin-top: 20px;
+    }
 }
 
 .product__list--date {
     display: block;
+    @include responsive(mediumScreens) {
+        width: 230px;
+        margin: 0 auto;
+    }
 }
 
 .product__date-check {
@@ -161,5 +193,10 @@
         background: $color-8;
         color: white;
         border: 0;
+    }
+    @include responsive(phoneScreens) {
+        table {
+            width: 90%;
+        }
     }
 }
