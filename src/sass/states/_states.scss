@@ -93,17 +93,21 @@
 
 .btn--blue {
     background: $color-3;
-    &:hover {
-        margin-top: 3px;
-        background: rgba($color-3, 0.8);
+    @include responsive(pcScreens) {
+        &:hover {
+            margin-top: 3px;
+            background: rgba($color-3, 0.8);
+        }
     }
 }
 
 .btn--navy {
     background: $color-2;
-    &:hover {
-        margin-top: 3px;
-        background: rgba($color-2, 0.8);
+    @include responsive(pcScreens) {
+        &:hover {
+            margin-top: 3px;
+            background: rgba($color-2, 0.8);
+        }
     }
 }
 
@@ -113,9 +117,11 @@
     a {
         color: $color-4;
     }
-    &:hover {
-        margin-top: 18px;
-        // background: rgba($color-2, 0.8);
+    @include responsive(pcScreens) {
+        &:hover {
+            margin-top: 18px;
+            // background: rgba($color-2, 0.8);
+        }
     }
 }
 
@@ -124,8 +130,10 @@
     border-radius: 20px;
     display: inline-block;
     margin: 0 10px 20px;
-    &:hover {
-        background: rgba(white, 0.9);
+    @include responsive(pcScreens) {
+        &:hover {
+            background: rgba(white, 0.9);
+        }
     }
     a {
         color: $color-5;
@@ -138,8 +146,10 @@
 .btn--products--selected {
     @extend .btn--products;
     background: $color-2;
-    &:hover {
-        background: rgba($color-2, 0.8);
+    @include responsive(pcScreens) {
+        &:hover {
+            background: rgba($color-2, 0.8);
+        }
     }
     a {
         color: white;
